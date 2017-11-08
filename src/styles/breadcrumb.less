@@ -1,0 +1,26 @@
+
+.breadcrumb {
+  margin: 0;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  
+  li {
+    color: #868895;
+    font-size: 13px;
+
+    & + li:before {
+      content: '•';
+      color: #868895;
+      padding: 0 5px 0px 3px;
+    }
+
+    a {
+      color: #868895;
+
+      &:hover, &:focus {
+        color: #868895;
+      }
+    }
+  }
+}

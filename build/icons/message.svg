@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="18px" viewBox="0 0 27 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>letter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-kit" transform="translate(-313.000000, -976.000000)" stroke="#FFFFFF">
+            <g id="Group-2-Copy" transform="translate(128.000000, 963.000000)">
+                <g id="letter" transform="translate(185.000000, 13.000000)">
+                    <g>
+                        <rect id="Rectangle-8" stroke-width="2" x="1" y="1" width="25" height="16"></rect>
+                        <polyline id="Path-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="1 1.22026432 13.5 11 26 1"></polyline>
+                        <path d="M2,16 L9,8" id="Path-4" stroke-width="2"></path>
+                        <path d="M17,16 L24,8" id="Path-4-Copy" stroke-width="2" transform="translate(21.000000, 12.500000) scale(-1, 1) translate(-21.000000, -12.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

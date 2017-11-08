@@ -1,0 +1,81 @@
+
+.btn {
+  border-radius: 0px;
+  border: none;
+  transition: @transition-basic;
+  position: relative;
+  z-index: 1;
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: 0px;
+  }
+
+  &__main {
+    height: 48px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    font-family: @Roboto;
+    padding: 0px 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+    &:hover, &:focus {
+      color: white;
+    }
+
+    &:hover {
+
+    }
+
+    &__text {
+      vertical-align: top;
+    }
+
+    &__icon {
+      vertical-align: top;
+      margin-left: 6px;
+      margin-top: -1px;
+    }
+
+    &--dark {
+      background-color: @promo;
+
+      &:hover {
+        background-color: #122E52;
+      }
+
+      &[disabled]{
+        background-color: @promo;
+      }
+    }
+
+    &--light {
+      background-color: @bright;
+
+      &:hover {
+        background-color: #D95300;
+      }
+
+      &[disabled]{
+        background-color: @bright;
+      }
+    }
+
+    &[disabled]{
+      opacity: .5;
+
+      &:hover {
+
+      }
+    }
+  }
+}
+
+
+

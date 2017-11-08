@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        header
+    </div>
+</header>
+
+<div class="content">
+    <div class="content__container">
+
+        <div class="head-h1">Headline_1_dark_blue</div>
+
+
+        <div class="head-h2">Headline_2_dark_blue</div>
+
+        <div class="head-h2 text--promo">Headline_2_dark_blue</div>
+
+        <div class="head-h2 text--bright">Headline_2_dark_blue</div>
+
+
+        <div class="head-h3">Headline_3_dark_blue</div>
+
+        <div class="head-h3 text--light">Body_text_light_gray</div>
+
+        <div class="head-h4">Small_text_light_gray</div>
+
+        <div class="head-h4 text--promo text--underline">Small_text_light_gray</div>
+
+        <a href="#" class="promo-link">Links_dark_blue</a>
+
+
+
+        <div class="head-h2">Большие кнопки <span class="head-h3 text--light">* Иконки в svg ниже</span></div>
+
+        <ul>
+            <li>
+                <button class="btn btn__main btn__main--dark">
+                    <span class="btn__main__text">Отправить вопрос</span>
+                    <svg class="btn__main__icon" width="27px" height="18px"><use xlink:href="icons/icons.svg#message"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn__main btn__main--light">
+                    <span class="btn__main__text">Счёт-фактура</span>
+                    <svg class="btn__main__icon" width="13px" height="15px"><use xlink:href="icons/icons.svg#download"></use></svg>
+                </button>
+            </li>
+
+            <li>
+                <button class="btn btn__main btn__main--light" disabled>Счёт-фактура</button>
+            </li>
+        </ul>
+
+
+
+        <div class="head-h2">Стрелки <span class="head-h3 text--light">* Иконки в svg ниже</span></div>
+
+        <ul>
+            <li>
+                <div class="pointer-promo">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+
+                <div class="pointer-promo pointer-promo--top">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+
+                <div class="pointer-promo pointer-promo--left">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+
+                <div class="pointer-promo pointer-promo--right">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+
+                <div class="pointer-promo pointer-promo--clear">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+
+                <div class="pointer-promo pointer-promo--disabled">
+                    <div class="pointer-promo__icon">
+                        <svg class="active"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+                        <svg class="hover"><use xlink:href="icons/icons.svg#pointer-white"></use></svg>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pointer-promo"></div>
+            </li>
+            <li>
+                <div class="pointer-promo"></div>
+            </li>
+            <li>
+                <div class="pointer-promo"></div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        footer
+    </div>
+</footer>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--main">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <svg class="" width="17px" height="17px">
+                        <use xlink:href="icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Напишите нам</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal__form">
+                    <form action="">
+                        <div class="modal__form__block">
+                            <div class="input-material">
+                                <input type="text" placeholder="" required>
+                                <hr>
+                                <label>Ваше имя</label>
+                            </div>
+                        </div>
+
+                        <div class="modal__form__block">
+                            <div class="input-material">
+                                <input type="text" placeholder="" required>
+                                <hr>
+                                <label>Ваша почта</label>
+                            </div>
+                        </div>
+
+                        <div class="modal__form__block">
+                            <div class="input-material">
+                                <input type="text" placeholder="" required>
+                                <hr>
+                                <label>Ваше сообщение</label>
+                            </div>
+                        </div>
+
+                        <div class="modal__form__submit">
+                            <a href="#" class="btn btn__promo">Отправить</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
