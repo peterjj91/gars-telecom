@@ -34,6 +34,9 @@ $(document).on('click', '.dropdown .dropdown-menu', function (e) {
 });
 
 $(function () {
-
+    tippy('.tooltip')
 });
 
+$(function () {
+
+});

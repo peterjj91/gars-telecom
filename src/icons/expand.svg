@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-kit" transform="translate(-673.000000, -1740.000000)" stroke-width="2" stroke="#244775">
+            <g id="icon" transform="translate(670.000000, 1737.000000)">
+                <polyline id="Path-2-Copy-5" transform="translate(16.100369, 5.928711) rotate(-135.000000) translate(-16.100369, -5.928711) " points="11 3.37127072 16.1148804 8.48615115 21.2007376 3.40029403"></polyline>
+                <polyline id="Path-2-Copy-6" transform="translate(6.100369, 15.928711) rotate(-315.000000) translate(-6.100369, -15.928711) " points="1 13.3712707 6.11488043 18.4861512 11.2007376 13.400294"></polyline>
+                <path d="M5.27859223,16.7138669 L16.4786368,5.51382227" id="Line" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

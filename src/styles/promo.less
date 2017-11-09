@@ -7,46 +7,21 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
+  transition: @transition-basic;
+
+  stroke: #244775;
+  stroke-width: 2;
+  stroke-linecap: round;
 
   &:hover {
     background-color: @promo;
     border-color: @promo;
-    fill: white;
-
-    .active {
-      display: none;
-    }
-
-    .hover {
-      display: block;
-    }
+    stroke: white;
   }
 
-  &__icon {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 17px;
-    height: 14px;
-    //margin-left: -1px;
-
-    svg {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .hover {
-    display: none;
-  }
-
-  .active {
-
+  svg {
+    width: 100%;
+    height: 100%;
   }
 
   &--clear {
@@ -56,14 +31,10 @@
   &--disabled {
     background-color: #E9E9E9;
     border-color: #E9E9E9;
-
-    .pointer-promo__icon {
-      margin-left: 0;
-    }
   }
 
   &--right {
-    transform: rotate(-91deg);
+    transform: rotate(-90deg);
   }
 
   &--top {
@@ -71,6 +42,75 @@
   }
 
   &--left {
-    transform: rotate(91deg);
+    transform: rotate(90deg);
+  }
+}
+
+.icon-mini {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid transparent;
+  vertical-align: top;
+  transition: @transition-basic;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--blue {
+    border-color: #244775;
+    stroke: #244775;
+    fill: #244775;
+    stroke-width: 0.5;
+
+    &:hover {
+      background-color: #244775;
+      stroke: white;
+      fill: white;
+    }
+  }
+
+  &--orange {
+    border-color: #FF6600;
+    stroke: #FF6600;
+    fill: #FF6600;
+    stroke-width: 0.5;
+
+    &:hover {
+      background-color: #FF6600;
+      stroke: white;
+      fill: white;
+    }
+  }
+
+  &--green {
+    border-color: #00CCCC;
+    stroke: #00CCCC;
+    fill: #00CCCC;
+    stroke-width: 0.5;
+
+    &:hover {
+      background-color: #00CCCC;
+      stroke: white;
+      fill: white;
+    }
+  }
+
+  &--close {
+    border-color: #D3D3D3;
+    stroke: #D3D3D3;
+    fill: #D3D3D3;
+    stroke-width: 0.5;
+
+    &:hover {
+      //background-color: #D3D3D3;
+    }
   }
 }
