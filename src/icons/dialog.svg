@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>message</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+        <g id="ui-kit" transform="translate(-1035.000000, -3576.000000)">
+            <g id="more" transform="translate(1036.000000, 3575.000000)">
+                <path d="M10.0804034,18.5362348 C11.30873,18.8367754 12.6274546,19 14,19 C20.627417,19 26,15.1944204 26,10.5 C26,5.80557963 20.627417,2 14,2 C7.372583,2 2,5.80557963 2,10.5 C2,12.9797636 3.49913149,15.2115106 5.89045587,16.7653264 C4.75258043,17.9140468 3.45576181,19.3256046 2,21 C5.745719,20.6844105 8.43918679,19.8631554 10.0804034,18.5362348 Z" id="Combined-Shape" stroke="#FF6600" stroke-width="2"></path>
+                <circle id="Oval-2" fill="#FF6600" fill-rule="evenodd" cx="10" cy="10" r="1"></circle>
+                <circle id="Oval-2-Copy" fill="#FF6600" fill-rule="evenodd" cx="14" cy="10" r="1"></circle>
+                <circle id="Oval-2-Copy-2" fill="#FF6600" fill-rule="evenodd" cx="18" cy="10" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

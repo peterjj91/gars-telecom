@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>cube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="ui-kit" transform="translate(-283.000000, -3637.000000)" stroke-width="2" stroke="#244775">
+            <g id="cube" transform="translate(284.000000, 3638.000000)">
+                <polyline id="Path-6" points="0 7.57894737 0 27.35164 15.9172794 35.2103721"></polyline>
+                <polyline id="Path-6-Copy" transform="translate(23.958640, 21.394660) scale(-1, 1) translate(-23.958640, -21.394660) " points="16 7.57894737 16 27.35164 31.9172794 35.2103721"></polyline>
+                <path d="M16,15.1578947 L16,34.5789474" id="Line"></path>
+                <path d="M0,7.57894737 L16,15.1578947" id="Line-Copy"></path>
+                <path d="M16,0 L32,7.57894737" id="Line-Copy-4"></path>
+                <path d="M16,7.57894737 L32,15.1578947" id="Line-Copy-2" transform="translate(24.000000, 11.368421) scale(-1, 1) translate(-24.000000, -11.368421) "></path>
+                <path d="M0,0 L16,7.57894737" id="Line-Copy-3" transform="translate(8.000000, 3.789474) scale(-1, 1) translate(-8.000000, -3.789474) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

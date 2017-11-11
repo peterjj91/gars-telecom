@@ -3,6 +3,17 @@
   outline: none;
 }
 
+
+.textarea {
+  outline: none;
+  border: 2px solid #D8D8D8;
+
+  &--big {
+
+  }
+}
+
+
 .input-material {
   position: relative;
   padding: 0;
@@ -12,15 +23,17 @@
 
   input {
     box-sizing: border-box;
+    background: transparent;
     width: 100%;
-    padding: 12px 0px 10px 0px;
-    border: none;
-    border-radius: 0;
+    padding: 27px 0 26px;
     box-shadow: none;
-    border-bottom: 1px solid #CA9F54;
-    font-size: 120%;
+    border: none;
+    border-bottom: 1px dashed #DADADA;
+    font-size: 18px;
+    font-weight: bold;
     outline: none;
     cursor: text;
+    color: #244775;
 
     &::-webkit-input-placeholder {
       transition: color 300ms ease;
@@ -56,18 +69,19 @@
 
   label {
     position: absolute;
-    top: 14px;
+    font-weight: bold;
+    top: 30px;
     left: 0px;
-    font-size: 120%;
-    font-weight: normal;
-    color: rgba(0, 0, 0, .37);
-    transform-origin: 0 -150%;
+    font-size: 17px;
+    color: #979797;
+    transform-origin: 0 -700%;
     transition: transform 300ms ease;
     pointer-events: none;
   }
+
   input:focus ~ label, input:valid ~ label {
-    transform: scale(0.6);
-    top: 10px;
+    transform: scale(0.8);
+    //top: 3px;
   }
 }
 
@@ -187,6 +201,10 @@
       border-color: #33CCFF;
     }
   }
+
+  &__tooltip {
+    margin-left: 5px;
+  }
 }
 
 
@@ -209,3 +227,5 @@
     }
   }
 }
+
+

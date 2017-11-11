@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>telephony</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-kit" transform="translate(-616.000000, -3562.000000)">
+            <g id="telephony" transform="translate(616.000000, 3562.000000)">
+                <circle id="Oval-5" fill="#244775" cx="24" cy="24" r="24"></circle>
+                <image id="phone" x="11" y="10" width="30" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA0CAYAAAAwhpBbAAAAAXNSR0IArs4c6QAAA01JREFUaAXdWklrFEEU7rggiDGSEIkxuC/xB0TidlEQT15y8CAu/8JTDl70IP4CDx4kRz0pxiUSEVER8aiCOYhxAZc4JhAvyfh93e/FnkGSmkrVm6EefF01mbfUV+91VU26s2q1mgG7gZtABWhEqE872tNPS6INA9ubZdlzYAPgK79gOAi883UQ024FnF8CSHAU6AXaGgD1aUd7+mlJYSYrGNl6gAP+4jHKTbD5DMwA7SX7aqlv1f2NQNeAYWBWg5KkDoYZ9JX/+dC/+fpcjt0IjM8A+RhYrrGkkbIPpXsYZJjN08CQEotJUmNYtk8R7KIEvKCBY5arxrBu1yHgJNAB7AImUsskOOUL4F12IMd5SZEkeT3gBXKCl1RJjpMchAeULMV7krwoUwAPKb2pZpIk3/AC2ZMyyfcFx2xnyiQ/CMnNliS3IOgjgGfKh8A2oF5C6dDvV3Heyd9/Ksv5Leji454qSfsYbX3MUDr0OyRxbliurrraafbm0FmlH6QNpUN3R4Ex4L5lub5m5JK8KPW1G0qH/jhhlC7Lct2O8hkDpoFxYAdQX66hdOiX/ikTluVazKvdtQ+hPgKTluVqR6+INC0B21MmuTCpKZcrE8gVfM4yk6E2ehc/zOI8L5CVlqtrqI3exY+u2vnyalmuoTZ6Fz9FDg3+W6eBtA210bv40ZhFm+ezuGiKfVp1s5htqI3exQ/HsVoGNWtZrrWzG/9TB0LwGU3FcnWNT6s2gnIz3UJqhxD/kz6XmVG28UPaR1gjIf+kTLJTSE5ZknQ5qYTSIb9uIfmdS63KYsv/Ut+5+HA5qYTS4XjPyaCuW2Zyv8ysNoe0U2pD6dBll/j9aUnS5aQSSof8mlKuLieVUDos1xEp17Mpn3j4QPYgcCRlkjzS8Wi30fKeRDwz2YpIJMj/on9LleQBmc6XbFMleUxIPmGb4j25Frw+AXwAuw94m2ImzwvBVyQIJFeuA+B0mcQgV4ombrk287Wz2yB4Elh47YyvaVH4IqCP9IgRXyBstvzAAK4Cp4B/k4yjD1/KpdwBeoClfnGUv+8TOzS5n/J3LdPn6toP1s8Arka+wtMF96b8Rvd1EsuOqysHNgjcAvRJELpOQn3a0b4lCZLFX5YJkcW5lFyGAAAAAElFTkSuQmCC"></image>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+
+.scrollbar {
+  overflow: hidden;
+  height: 601px;
+
+}
+
+
+
+.mCSB {
+  &_dragger_bar {
+
+  }
+
+  &_scrollTools {
+
+  }
+
+  &_container {
+    min-height: 100%;
+  }
+
+  &_dragger {
+
+  }
+}
+
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 8px;
+  background-color: #33CCFF !important;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #33CCFF !important;
+  }
+}
+
+.mCSB_outside+.mCSB_scrollTools {
+  right: 0;
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight{
+  background-image: url(../img/mCSB_buttons.png);
+  background-repeat: no-repeat;
+}

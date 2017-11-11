@@ -1,16 +1,94 @@
+
+.tooltip {
+  outline: none;
+
+  &__promo {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    background: #D3D3D3;
+
+    &--orange {
+      background-color: #244775;
+    }
+
+    &--blue {
+      background-color: #FF4C00;
+    }
+
+    &--sea {
+      background-color: #33CCFF;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 .tippy-popper {
   padding: 8px 10px 10px 10px;
   max-width: 280px;
 
-  & [x-arrow] {
-    border-top: 7px solid #244775 !important;
-    border-right: 7px solid transparent;
-    border-left: 7px solid transparent;
+  [x-arrow] {
+
+  }
+
+  &[x-placement="top"]{
+    [x-arrow] {
+      border-top: 7px solid #244775;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      margin-left: -10px !important;
+    }
+  }
+
+  &[x-placement="bottom"]{
+    [x-arrow] {
+      border-bottom: 7px solid #244775;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+
+      margin-left: -10px !important;
+    }
+  }
+
+  &[x-placement="right"]{
+    [x-arrow] {
+      margin: 0;
+      transform: translate(0%, -50%);
+      border-right: 7px solid #244775;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+  }
+
+  &[x-placement="left"]{
+    [x-arrow] {
+      top: 50%;
+      margin: 0;
+      transform: translate(0%, -50%);
+      border-left: 7px solid #244775;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
   }
 }
 
 .tippy-tooltip  {
   background-color: #244775;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-align: left;
 
   .tippy-tooltip-content {
 
@@ -19,8 +97,4 @@
   & [x-arrow] {
 
   }
-}
-
-.tippy-tooltip [x-circle] {
-  background-color: yellow;
 }

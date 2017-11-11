@@ -1,9 +1,55 @@
 
 .content {
-
+  padding: 48px 0px 77px 0px;
+  background: #F2F2F2;
 
   &__container {
     .container();
+  }
+
+  &__main {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    padding: 26px 33px 20px;
+    margin-bottom: 24px;
+
+    &--clear {
+      padding: 0;
+      background: transparent;
+    }
+  }
+
+  &__title {
+    .head-h2;
+    .text--promo;
+    margin-bottom: 8px;
+
+    &__nav {
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      margin-left: 16px;
+      margin-bottom: 25px;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__link {
+      .head-h3;
+      .text--light;
+      .text--promo;
+      font-family: @Roboto;
+      text-decoration: underline;
+    }
   }
 }
 

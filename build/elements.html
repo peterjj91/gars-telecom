@@ -13,8 +13,159 @@
 
 <body>
 <header class="header">
-    <div class="header__container">
-        header
+    <div class="header__main">
+        <div class="header__main__cell header__main__cell--logo">
+            <div class="header__logo">
+                <a href="#" class="logo"></a>
+            </div>
+        </div>
+
+        <div class="header__main__cell header__main__cell--contanct">
+            <div class="header__manager">
+                <div class="header__manager__title">Ваш персональный менеджер</div>
+
+                <div class="header__manager__description">
+                    <div class="header__manager__description__cell">
+                        <div href="#" class="header__manager__img">
+                            <img src="img/manager.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="header__manager__description__cell">
+                        <span href="#" class="header__manager__name">Златан Бжожовский</span>
+                    </div>
+
+                    <div class="header__manager__description__cell">
+                        <ul class="header__manager__info">
+                            <li><a href="tel:+79215678990">+7 (921) 567-89-90</a></li>
+                            <li><a href="mailto:d.akhmetdzhanov@garstelecom.ru">d.akhmetdzhanov@garstelecom.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__main__cell header__main__cell--info">
+            <div class="header__info">
+                <div class="header__info__title">
+                    Ваши персональные данные
+                </div>
+
+                <div class="header__info__description">
+                    <div class="header__info__img">
+                        <img src="img/profile-logo.png" alt="">
+                    </div>
+
+                    <div class="header__info__client">
+                        <div class="header__info__client__name">
+                            Длинное наименование клиента
+
+                            <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                                <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                            </button>
+                        </div>
+
+                        <div class="header__info__client__num">
+                            38910
+
+                            <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                                <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                            </button>
+                        </div>
+
+                        <a href="#" class="header__info__client__profile">Профиль</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="header__main__cell header__main__cell--login">
+            <div class="header__login">
+                <svg class="header__login__icon"><use xlink:href="icons/icons.svg#exit"></use></svg>
+
+                <div class="header__login__text">Выйти</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="header__nav">
+        <div class="header__container">
+            <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                <ul>
+                    <li>
+                        <a href="#" class="cbp-hrmenu__link">
+                            <span class="cbp-hrmenu__link__inside">Услуги</span>
+
+                            <span class="cbp-hrmenu__link__icon"></span>
+                        </a>
+
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <ul>
+                                    <li><a href="#">Отчёт по начислениям</a></li>
+                                    <li><a href="#">Отчёт по траффику</a></li>
+                                    <li><a href="#">Отчёт a звонкам</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cbp-hrmenu__link">
+                            <span class="cbp-hrmenu__link__inside">Отчеты</span>
+
+                            <span class="cbp-hrmenu__link__icon"></span>
+                        </a>
+
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <ul>
+                                    <li><a href="#">Отчёт по начислениям</a></li>
+                                    <li><a href="#">Отчёт по траффику</a></li>
+                                    <li><a href="#">Отчёт a звонкам</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cbp-hrmenu__link">
+                            <span class="cbp-hrmenu__link__inside">Документы</span>
+
+                            <span class="cbp-hrmenu__link__icon"></span>
+                        </a>
+
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <ul>
+                                    <li><a href="#">Отчёт по начислениям</a></li>
+                                    <li><a href="#">Отчёт по траффику</a></li>
+                                    <li><a href="#">Отчёт a звонкам</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="cbp-hrmenu__link">
+                            <span class="cbp-hrmenu__link__inside">Акции</span>
+
+                            <span class="cbp-hrmenu__link__icon"></span>
+                        </a>
+
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <ul>
+                                    <li><a href="#">Отчёт по начислениям</a></li>
+                                    <li><a href="#">Отчёт по траффику</a></li>
+                                    <li><a href="#">Отчёт a звонкам</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
@@ -41,6 +192,7 @@
 
         <a href="#" class="promo-link">Links_dark_blue</a>
 
+        <div class="head-h5"></div>
 
 
         <div class="head-h2">Большие кнопки <span class="head-h3 text--light">* Иконки в svg ниже</span></div>
@@ -122,19 +274,99 @@
             </li>
         </ul>
 
+
+
         <ul>
             <li>
                 <label class="form-input">
                     <p class="form-input__text">Логин</p>
 
                     <input type="text" class="input form-input__input" placeholder="">
+
+                    <span class="form-input__tooltip">
+                        <button class="tooltip tooltip__promo" data-arrow="true" data-position="right" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                            <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                        </button>
+                    </span>
                 </label>
             </li>
 
             <li>
-                <button class="tooltip" data-arrow="true" data-sticky="true" data-hideonclick="false" data-trigger="click" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">Text</button>
+                <button class="tooltip tooltip__promo" data-arrow="true" data-sticky="true" data-hideonclick="false" data-trigger="click" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                    <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                </button>
+
+                <button class="tooltip tooltip__promo tooltip__promo--blue" data-arrow="true" data-sticky="true" data-hideonclick="false" data-trigger="click" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                    <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                </button>
+
+                <button class="tooltip tooltip__promo tooltip__promo--orange" data-arrow="true" data-sticky="true" data-hideonclick="false" data-trigger="click" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                    <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                </button>
+
+                <button class="tooltip tooltip__promo tooltip__promo--sea" data-arrow="true" data-sticky="true" data-hideonclick="false" data-trigger="click" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                    <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                </button>
+            </li>
+
+            <li>
+                <fieldset class="input-material">
+                    <input type="text" placeholder="" required="" class="input-material__input">
+
+                    <label class="input-material__label">E-mail</label>
+                </fieldset>
+            </li>
+
+            <li>
+                <div class="dots"></div>
             </li>
         </ul>
+
+
+
+        <div style="background-color: gainsboro;">
+            <ul>
+                <li>
+                    <svg width="27px" style="fill: transparent;"><use xlink:href="icons/icons.svg#key"></use></svg>
+
+                    <svg width="27px" style="fill:transparent; stroke:white;"><use xlink:href="icons/icons.svg#message"></use></svg>
+
+                    <svg width="27px" style="fill:transparent; stroke:white;"><use xlink:href="icons/icons.svg#pointer"></use></svg>
+
+                    <svg width="27px" style="fill:transparent; "><use xlink:href="icons/icons.svg#download"></use></svg>
+
+                    <svg width="27px" style="fill:transparent; "><use xlink:href="icons/icons.svg#exit-white"></use></svg>
+
+                    <svg width="27px" style="stroke: white; "><use xlink:href="icons/icons.svg#plus"></use></svg>
+
+                    <svg width="27px" style="stroke: white; fill: white;"><use xlink:href="icons/icons.svg#menu"></use></svg>
+
+                    <svg width="27px" style="stroke: white; fill: white;"><use xlink:href="icons/icons.svg#close-menu"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#exit"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#attention_icon"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; "><use xlink:href="icons/icons.svg#telephony"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; "><use xlink:href="icons/icons.svg#internet"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; "><use xlink:href="icons/icons.svg#clouds"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; "><use xlink:href="icons/icons.svg#download-orange"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; "><use xlink:href="icons/icons.svg#dialog"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#clock"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#check"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#check-2"></use></svg>
+
+                    <svg width="27px" style="fill: transparent; stroke: white;"><use xlink:href="icons/icons.svg#cube"></use></svg>
+                </li>
+            </ul>
+        </div>
 
     </div>
 </div>
@@ -142,7 +374,112 @@
 
 <footer class="footer">
     <div class="footer__container">
-        footer
+        <div class="footer__title">Карта услуг</div>
+
+        <div class="footer__map">
+            <div class="footer__map__block">
+                <div class="footer__map__title">Телефония</div>
+
+                <ul class="footer__nav">
+                    <li><a href="#">Многоканальные и виртуальные городские номера</a></li>
+                    <li><a href="#">Междугородняя и международная телефонная связь</a></li>
+                    <li><a href="#">Номера «8-800»</a></li>
+                    <li><a href="#">Бесплатные звонки с мобильных по короткому номеру</a></li>
+                    <li><a href="#">Виртуальная АТС (IP-телефония)</a></li>
+                    <li><a href="#">Единая офисная фиксированно- мобильная сеть</a></li>
+                    <li><a href="#">IP-Корпорация</a></li>
+                    <li><a href="#">«Мобильный офис»</a></li>
+                    <li><a href="#">«Умный офис»</a></li>
+                    <li><a href="#">Голосовые меню (IVR) и приветствия</a></li>
+                    <li><a href="#">Поставка, аренда и техобслуживание оборудования</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__map__block">
+                <div class="footer__map__title">Интернет</div>
+
+                <ul class="footer__nav">
+                    <li><a href="#">Качественный проводной интернет в офис</a></li>
+                    <li><a href="#">Беспроводной Wi-Fi интернет в офис</a></li>
+                    <li><a href="#">Предоставление IP-адресов</a></li>
+                </ul>
+
+                <div class="footer__map__title">Сети и каналы связи</div>
+
+                <ul class="footer__nav">
+                    <li><a href="#">Аренда каналов связи</a></li>
+                    <li><a href="#">Удалённый доступ к ресурсам в ЦОД</a></li>
+                    <li><a href="#">IP VPN</a></li>
+                    <li><a href="#">Защищенная банковская сеть</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__map__block">
+                <div class="footer__map__title">Облачные решения</div>
+
+                <ul class="footer__nav">
+                    <li><a href="#">IaaS: Инфраструктура как услуга IaaS</a></li>
+                    <li><a href="#">SaaS: ПО в аренду</a></li>
+                    <li><a href="#">BaaS: Резервное копирование как услуга</a></li>
+                </ul>
+
+                <div class="footer__map__title">Защита и безопасность</div>
+
+                <ul class="footer__nav">
+                    <li><a href="#">SSL-сертификат</a></li>
+                    <li><a href="#">Защищенная банковская сеть</a></li>
+                    <li><a href="#">Видеонаблюдение-онлайн - облачный сервис</a></li>
+                    <li><a href="#">Анти-DDoS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__info">
+            <div class="footer__info__block">
+                <div class="footer__map__title">© 1999-2017 Гарс Телеком</div>
+
+                <ul class="footer__polit">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Устранение неисправностей</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__info__block">
+                <div class="footer__map__title">Техподдержка</div>
+
+                <ul class="footer__tel">
+                    <li>Спб: <a href="tel:+78005556575">+7 800 555 6575</a></li>
+                    <li>Мск: <a href="tel:+78005556575">+7 800 555 6575</a></li>
+                </ul>
+
+                <div class="footer__map__title">Гарс Телеком в соцмедиа</div>
+
+                <ul class="footer__social">
+                    <li><a href="#"><span class="icon icon__vk"></span></a></li>
+                    <li><a href="#"><span class="icon icon__journal"></span></a></li>
+                    <li><a href="#"><span class="icon icon__fb"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__info__block">
+                <div class="footer__map__title">Офисы компании</div>
+
+                <div class="footer__adress">
+                    <p><strong>Москва</strong> 121552, Москва, ул. Островная, вл. 2.</p>
+                    <p>Метро «Молодёжная»</p>
+                    <p>+7 495 748 0099</p>
+                    <p><a href="mailto:hd@garstelecom.ru">hd@garstelecom.ru</a></p>
+                </div>
+
+                <div class="footer__adress">
+                    <p><strong>Санкт-Петербург</strong> 199178, Санкт-Петербург,</p>
+                    <p>В.О., 18-я линия, 29, литера «И».</p>
+                    <p>Метро «Василеостровская»</p>
+                    <p>+7 812 635 8805</p>
+                    <p><a href="mailto:hd@garstelecom.ru">hd@garstelecom.ru</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

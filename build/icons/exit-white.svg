@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>exit-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 12 3.7827001 12 24 0 20.2172999"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="ui-kit" transform="translate(-444.000000, -3445.000000)">
+            <g id="exit-white" transform="translate(444.000000, 3445.000000)">
+                <rect id="Rectangle-6-Copy" stroke="#FFFFFF" x="0.5" y="0.5" width="15" height="19"></rect>
+                <g id="Rectangle-6">
+                    <use fill="#143056" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="1" d="M0.5,0.681865975 L0.5,19.8506589 L11.5,23.318134 L11.5,4.14934107 L0.5,0.681865975 Z"></path>
+                </g>
+                <circle id="Oval-4" fill="#FFFFFF" cx="8" cy="13" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
