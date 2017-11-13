@@ -12,168 +12,222 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="header__main">
-        <div class="header__main__cell header__main__cell--logo">
-            <div class="header__logo">
-                <a href="#" class="logo"></a>
-            </div>
+
+<div id="navbar-main" class="slideout-menu">
+    <div class="sidemenu">
+        <div class="sidemenu__close">
+            <svg width="13px" height="13px" style="stroke: white; fill: white;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#close-menu"></use></svg>
         </div>
 
-        <div class="header__main__cell header__main__cell--contanct">
-            <div class="header__manager">
-                <div class="header__manager__title">Ваш персональный менеджер</div>
-
-                <div class="header__manager__description">
-                    <div class="header__manager__description__cell">
-                        <div href="#" class="header__manager__img">
-                            <img src="img/manager.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="header__manager__description__cell">
-                        <span href="#" class="header__manager__name">Златан Бжожовский</span>
-                    </div>
-
-                    <div class="header__manager__description__cell">
-                        <ul class="header__manager__info">
-                            <li><a href="tel:+79215678990">+7 (921) 567-89-90</a></li>
-                            <li><a href="mailto:d.akhmetdzhanov@garstelecom.ru">d.akhmetdzhanov@garstelecom.ru</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="sidemenu__logo">
+            <img src="img/profile-logo.png" alt="">
         </div>
 
-        <div class="header__main__cell header__main__cell--info">
-            <div class="header__info">
-                <div class="header__info__title">
-                    Ваши персональные данные
-                </div>
+        <div class="sidemenu__name">Длинное наименование клиента</div>
 
-                <div class="header__info__description">
-                    <div class="header__info__img">
-                        <img src="img/profile-logo.png" alt="">
-                    </div>
+        <div class="sidemenu__num">38910</div>
 
-                    <div class="header__info__client">
-                        <div class="header__info__client__name">
-                            Длинное наименование клиента
+        <ul class="sidemenu__nav">
+            <li><a href="#">ПРОФИЛЬ</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Отчёт по начислениям</a></li>
+            <li><a href="#">Отчёт по траффику</a></li>
+            <li><a href="#">Отчёт по звонкам</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Акции</a></li>
+        </ul>
 
-                            <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
-                                <svg><use xlink:href="icons/icons.svg#question"></use></svg>
-                            </button>
-                        </div>
+        <div class="sidemenu__exit">
+            <div class="sidemenu__exit__content">
+                <div class="sidemenu__exit__text">Выйти</div>
 
-                        <div class="header__info__client__num">
-                            38910
-
-                            <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
-                                <svg><use xlink:href="icons/icons.svg#question"></use></svg>
-                            </button>
-                        </div>
-
-                        <a href="#" class="header__info__client__profile">Профиль</a>
-                    </div>
+                <div class="sidemenu__exit__icon">
+                    <svg width="27px" height="30px" style="fill: transparent; stroke: white;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#exit"></use></svg>
                 </div>
             </div>
-        </div>
-
-        <a href="#" class="header__main__cell header__main__cell--login">
-            <div class="header__login">
-                <svg class="header__login__icon"><use xlink:href="icons/icons.svg#exit"></use></svg>
-
-                <div class="header__login__text">Выйти</div>
-            </div>
-        </a>
-    </div>
-
-    <div class="header__nav">
-        <div class="header__container">
-            <nav id="cbp-hrmenu" class="cbp-hrmenu">
-                <ul>
-                    <li>
-                        <a href="#" class="cbp-hrmenu__link">
-                            <span class="cbp-hrmenu__link__inside">Услуги</span>
-
-                            <span class="cbp-hrmenu__link__icon"></span>
-                        </a>
-
-                        <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner">
-                                <ul>
-                                    <li><a href="#">Отчёт по начислениям</a></li>
-                                    <li><a href="#">Отчёт по траффику</a></li>
-                                    <li><a href="#">Отчёт a звонкам</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#" class="cbp-hrmenu__link">
-                            <span class="cbp-hrmenu__link__inside">Отчеты</span>
-
-                            <span class="cbp-hrmenu__link__icon"></span>
-                        </a>
-
-                        <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner">
-                                <ul>
-                                    <li><a href="#">Отчёт по начислениям</a></li>
-                                    <li><a href="#">Отчёт по траффику</a></li>
-                                    <li><a href="#">Отчёт a звонкам</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#" class="cbp-hrmenu__link">
-                            <span class="cbp-hrmenu__link__inside">Документы</span>
-
-                            <span class="cbp-hrmenu__link__icon"></span>
-                        </a>
-
-                        <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner">
-                                <ul>
-                                    <li><a href="#">Отчёт по начислениям</a></li>
-                                    <li><a href="#">Отчёт по траффику</a></li>
-                                    <li><a href="#">Отчёт a звонкам</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#" class="cbp-hrmenu__link">
-                            <span class="cbp-hrmenu__link__inside">Акции</span>
-
-                            <span class="cbp-hrmenu__link__icon"></span>
-                        </a>
-
-                        <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner">
-                                <ul>
-                                    <li><a href="#">Отчёт по начислениям</a></li>
-                                    <li><a href="#">Отчёт по траффику</a></li>
-                                    <li><a href="#">Отчёт a звонкам</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
-</header>
+</div>
+
+<main id="main" class="content__wrapper">
+    <header class="header">
+        <div class="header__main">
+            <div class="header__main__container">
+                <div class="header__main__cell header__main__cell--logo">
+                    <div class="header__logo">
+                        <a href="#" class="logo"></a>
+                    </div>
+                </div>
+
+                <div class="header__mobile">
+                    <div class="header__main__cell header__main__cell--contanct">
+                        <div class="header__manager">
+                            <div class="header__manager__title">Ваш персональный менеджер</div>
+
+                            <div class="header__manager__description">
+                                <div class="header__manager__description__cell">
+                                    <div href="#" class="header__manager__img">
+                                        <img src="img/manager.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="header__manager__description__cell">
+                                    <span href="#" class="header__manager__name">Златан Бжожовский</span>
+                                </div>
+
+                                <div class="header__manager__description__cell">
+                                    <ul class="header__manager__info">
+                                        <li><a href="tel:+79215678990">+7 (921) 567-89-90</a></li>
+                                        <li><a href="mailto:d.akhmetdzhanov@garstelecom.ru">d.akhmetdzhanov@garstelecom.ru</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__main__cell header__main__cell--info">
+                    <div class="header__info">
+                        <div class="header__info__title">
+                            Ваши персональные данные
+                        </div>
+
+                        <div class="header__info__description">
+                            <div class="header__info__img">
+                                <img src="img/profile-logo.png" alt="">
+                            </div>
+
+                            <div class="header__info__client">
+                                <div class="header__info__client__name">
+                                    Длинное наименование клиента
+
+                                    <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                                        <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                                    </button>
+                                </div>
+
+                                <div class="header__info__client__num">
+                                    38910
+
+                                    <button class="tooltip tooltip__promo" data-arrow="true" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                                        <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                                    </button>
+                                </div>
+
+                                <a href="#" class="header__info__client__profile">Профиль</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="header__main__cell header__main__cell--login">
+                <div class="header__login">
+                    <svg class="header__login__icon"><use xlink:href="icons/icons.svg#exit"></use></svg>
+
+                    <div class="header__login__text">Выйти</div>
+                </div>
+
+                <a href="#" class="header__menu burger__button toggle-menu" data-toggle="button" aria-pressed="false"  id="main-main">
+                    <span class="mobile-menu"><span></span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <div class="header__container">
+                <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                    <ul>
+                        <li>
+                            <a href="#" class="cbp-hrmenu__link">
+                                <span class="cbp-hrmenu__link__inside">Услуги</span>
+
+                                <span class="cbp-hrmenu__link__icon"></span>
+                            </a>
+
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <ul>
+                                        <li><a href="#">Отчёт по начислениям</a></li>
+                                        <li><a href="#">Отчёт по траффику</a></li>
+                                        <li><a href="#">Отчёт a звонкам</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="cbp-hrmenu__link">
+                                <span class="cbp-hrmenu__link__inside">Отчеты</span>
+
+                                <span class="cbp-hrmenu__link__icon"></span>
+                            </a>
+
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <ul>
+                                        <li><a href="#">Отчёт по начислениям</a></li>
+                                        <li><a href="#">Отчёт по траффику</a></li>
+                                        <li><a href="#">Отчёт a звонкам</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="cbp-hrmenu__link">
+                                <span class="cbp-hrmenu__link__inside">Документы</span>
+
+                                <span class="cbp-hrmenu__link__icon"></span>
+                            </a>
+
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <ul>
+                                        <li><a href="#">Отчёт по начислениям</a></li>
+                                        <li><a href="#">Отчёт по траффику</a></li>
+                                        <li><a href="#">Отчёт a звонкам</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="cbp-hrmenu__link">
+                                <span class="cbp-hrmenu__link__inside">Акции</span>
+
+                                <span class="cbp-hrmenu__link__icon"></span>
+                            </a>
+
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <ul>
+                                        <li><a href="#">Отчёт по начислениям</a></li>
+                                        <li><a href="#">Отчёт по траффику</a></li>
+                                        <li><a href="#">Отчёт a звонкам</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
 <div class="content">
     <div class="content__container">
-        <ul style="margin-top: 100px;">
+
+        <ul>
+            <li><a href="elements.html">Элементы</a></li>
             <li><a href="index.html">Главная</a></li>
+            <li>
+                <a href="#" class="btn" data-toggle="modal" data-target="#myModal">
+                    Посмотреть демо
+                </a>
+            </li>
         </ul>
+
     </div>
 </div>
 
@@ -241,7 +295,7 @@
         </div>
 
         <div class="footer__info">
-            <div class="footer__info__block">
+            <div class="footer__info__block footer__info__block--info">
                 <div class="footer__map__title">© 1999-2017 Гарс Телеком</div>
 
                 <ul class="footer__polit">
@@ -289,54 +343,77 @@
     </div>
 </footer>
 
+<a href="#0" class="cd-top">
+    <div class="pointer-promo pointer-promo--top">
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#pointer-full"></use></svg>
+    </div>
+</a>
+
+<div class="promo-fixed">
+    <div class="promo-fixed__title">Оставить заявку</div>
+</div>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog--main">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    <svg class="" width="17px" height="17px">
-                        <use xlink:href="icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">Напишите нам</h4>
-            </div>
+            <div class="modal__title">Обращение к генеральному <br> директору</div>
 
-            <div class="modal-body">
-                <div class="modal__form">
-                    <form action="">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <div class="icon-mini icon-mini--close">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#close"></use></svg>
+                </div>
+            </button>
+
+            <div class="modal__form">
+                <form action="">
+                    <div class="modal__form__profile">
+                        <div class="modal__form__profile__img">
+                            <img src="img/profile-img1.png" alt="">
+                        </div>
+
+                        <div class="modal__form__profile__title">
+                            Александр Шинкарёв
+                        </div>
+
+                        <div class="modal__form__profile__position">
+                            Генеральный директор «Гарс Телеком»
+                        </div>
+                    </div>
+
+                    <div class="modal__form__content">
                         <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваше имя</label>
-                            </div>
+                            <label class="form-input">
+                                <p class="form-input__text">Представьтесь, пожалуйста</p>
+
+                                <input type="text" class="input form-input__input" placeholder="Например, Лаврентьев Михаил">
+                            </label>
                         </div>
 
                         <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваша почта</label>
-                            </div>
-                        </div>
+                            <label class="form-input">
+                                <p class="form-input__text">Текст вашего обращения</p>
 
-                        <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваше сообщение</label>
-                            </div>
+                                <textarea class="input form-input__input" placeholder="Формулируйте вопрос как можно точнее – это ускорит его решение"></textarea>
+                            </label>
                         </div>
 
                         <div class="modal__form__submit">
-                            <a href="#" class="btn btn__promo">Отправить</a>
+                            <a href="#" class="btn btn__main btn__main--light">
+                                <span class="btn__main__text">Отправить вопрос</span>
+
+                                <svg class="btn__main__icon" width="27px" height="18px">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./icons/icons.svg#message"></use>
+                                </svg>
+                            </a>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+</main>
 </body>
 </html>

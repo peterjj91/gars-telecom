@@ -68,6 +68,10 @@
 
 
 .table {
+  @media(@xs){
+    background-color: white;
+  }
+
   tr {
     td {
       &:first-child {
@@ -100,32 +104,87 @@
         padding-top: 16px;
         padding-bottom: 16px;
         line-height: 22px;
+        @media(@xs){
+          border-top: none;
+        }
       }
     }
   }
 
   &--contracts {
+    thead {
+      tr {
+        td {
+          @media(@xs){
+            padding: 24px 0 10px 24px !important;
+          }
+          @media(max-width: 550px){
+            padding: 14px 0 10px 17px!important;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          @media(@xs){
+            padding: 0px 15px 20px 24px !important;
+          }
+          @media(max-width: 550px){
+            padding: 0 10px 17px 17px!important;
+          }
+        }
+      }
+    }
+
     tr {
       td {
+        @media(@xs){
+
+        }
+
         &:nth-child(1) {
           width: 144px;
+
+          @media(@xs){
+
+          }
         }
 
         &:nth-child(2){
           width: 229px;
+          @media(@xs){
+            width: auto;
+          }
         }
 
         &:nth-child(3){
           width: 221px;
+          @media(@xs){
+            display: none;
+          }
         }
 
         &:nth-child(4){
           width: 138px;
           white-space: nowrap;
+          @media(@xs){
+            display: none;
+          }
+        }
+
+        &:nth-child(5){
+          @media(@xs){
+            display: none;
+          }
         }
 
         &:nth-child(6){
           width: 87px;
+          @media(@xs){
+            display: none;
+          }
         }
       }
     }
@@ -133,12 +192,68 @@
 
   &--service {
     margin-bottom: 47px;
+    @media(@sm){
+      margin-bottom: 43px;
+    }
+    @media(@xs){
+      margin-bottom: 23px;
+    }
+    @media(max-width: 550px){
+      margin-bottom: 15px;
+    }
+
+    thead {
+      tr {
+        td {
+          @media(@xs){
+            padding: 24px 24px 10px 24px !important;
+          }
+
+          &:nth-child(2){
+            @media(max-width: 550px){
+              display: none;
+            }
+          }
+
+          &:nth-child(3){
+            @media(max-width: 550px){
+              display: none;
+            }
+          }
+        }
+      }
+    }
 
     tbody {
       tr {
         td {
           padding-top: 14px;
-          padding-bottom: 22px;
+          padding-bottom: 23px;
+
+          @media(@xs){
+            padding: 0px 0px 20px 24px !important;
+          }
+
+          &:nth-child(2){
+            white-space: nowrap;
+            @media(max-width: 550px){
+              display: none;
+            }
+          }
+
+          &:nth-child(3){
+            //white-space: nowrap;
+            @media(max-width: 550px){
+              display: none;
+            }
+          }
+
+          &:nth-child(4){
+            white-space: nowrap;
+            @media(@xs){
+              padding-right: 24px !important;
+            }
+          }
         }
       }
     }

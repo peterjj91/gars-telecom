@@ -136,6 +136,17 @@
   padding: 24px 143px 26px 76px;
   .head-h3;
   .text--light;
+  @media(max-width: 550px){
+    .head-h4;
+    .text--light;
+  }
+  @media(@xs){
+    padding: 19px 22px 16px 76px;
+    min-height: 81px;
+  }
+  @media(max-width: 550px){
+    padding: 8px 14px 7px 14px;
+  }
 
   &__icon {
     position: absolute;
@@ -146,20 +157,37 @@
     width: 34px;
     height: 31px;
     margin-right: 21px;
+    @media(max-width: 550px){
+      display: none;
+    }
   }
 
   &__table {
     width: 100%;
     margin-top: 3px;
+    @media(max-width: 550px){
+      display: inline-block;
+      width: 100%;
+    }
 
     td {
       vertical-align: top;
+      @media(max-width: 550px){
+        display: block;
+        text-align: left;
+      }
     }
 
     &__price {
       padding-left: 20px;
       text-align: right;
       white-space: nowrap;
+      @media(max-width: 550px){
+        .head-h3;
+        .text--bright;
+        padding-left: 0;
+        margin-top: 3px;
+      }
     }
   }
 
@@ -172,6 +200,12 @@
 
   &--main {
     margin-bottom: 28px;
+    @media(@xs){
+      margin-bottom: 23px;
+    }
+    @media(max-width: 550px){
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -181,12 +215,23 @@
   width: 100%;
   margin-top: 64px;
   padding-bottom: 8px;
+  @media(@xs){
+    margin-top: 0px;
+  }
+  @media(max-width: 550px){
+    text-align: center;
+  }
 
   &__title {
     .head-h3;
     .text--light;
     display: inline-block;
     margin-top: 8px;
+
+    @media(max-width: 550px){
+      width: 100%;
+      margin-bottom: 11px;
+    }
   }
 
   &__button {
@@ -198,9 +243,20 @@
       display: inline-block;
       vertical-align: top;
       margin-right: 17px;
+      @media(@xs){
+        margin-right: 0;
+      }
+      @media(max-width: 550px){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
 
       &:last-child {
         margin-right: 0px;
+        @media(max-width: 550px){
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -231,6 +287,10 @@
 
   &--use {
     border-top: 1px solid #E9E9E9;
+
+    @media(@xs){
+      display: none;
+    }
   }
 }
 
@@ -244,18 +304,55 @@
     position: relative;
     background-color: white;
     height: 601px;
+    @media(@xs){
+      height: 508px;
+    }
 
     &__wrapper {
       .make-xs-column(8);
       transition: @transition-basic;
       padding: 0px 8px;
       margin-bottom: 24px;
+      @media(@xs){
+        .make-xs-column(12);
+        padding: 0px 8px;
+      }
+      @media(max-width: 500px){
+        width: 100%;
+      }
+
+      &--history {
+        @media(@xs){
+          .make-xs-column(24);
+          padding: 0px 8px;
+          margin-bottom: 32px;
+        }
+
+        .promo-use__block {
+          @media(@xs){
+            background-color: transparent;
+            height: auto;
+          }
+        }
+
+        .promo-use__collapse {
+          @media(@xs){
+            display: none;
+          }
+        }
+      }
 
       &--full {
         height: 100%;
 
         .promo-use__main {
           height: 100%;
+          @media(@sm){
+            padding: 29px 25px 34px 25px;
+          }
+          @media(@xs){
+            padding-top: 21px;
+          }
         }
       }
     }
@@ -269,13 +366,12 @@
     cursor: pointer;
     transition: @transition-basic;
 
-    &:hover {
-      transform: scale(1.2);
+    @media(@xs){
+      top: 15px;
     }
 
-    svg {
-      width: 100%;
-      height: 100%;
+    &:hover {
+      transform: scale(1.2);
     }
 
     &.active {
@@ -304,6 +400,9 @@
     height: 288px;
     padding: 8px 14px;
     resize: none;
+    @media(@xs){
+      height: 220px;
+    }
   }
 
   &__main {
@@ -311,15 +410,46 @@
     position: relative;
     padding: 30px 23px 32px 32px;
     border-bottom: 1px solid #D3D3D3;
-    margin-bottom: 5px;
 
     &:last-child {
       border-bottom: none;
+    }
+
+    @media(@sm){
+      padding: 26px 60px 34px 17px;
+    }
+
+    &__wrapper {
+      @media(max-width: 550px){
+        float: left;
+        display: inline-flex;
+      }
+
+      .promo-use__main {
+        @media(@xs){
+          width: 344px;
+          margin-right: 16px;
+          height: 275px !important;
+          float: left;
+          background-color: white;
+          padding-top: 23px;
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          border-bottom: none;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 
   &__box {
     margin-bottom: 7px;
+    @media(@sm){
+      margin-bottom: 6px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -341,6 +471,22 @@
     line-height: normal;
     padding-right: 25px;
     margin-bottom: 25px;
+    @media(@xs){
+      margin-bottom: 7px;
+    }
+
+    &--history {
+      padding: 30px 50px 0px 32px;
+      margin-bottom: 0px;
+
+      @media(@sm){
+        padding: 30px 60px 0 17px;
+      }
+      @media(@xs){
+        padding: 0px 0px 0 0px;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__text {
@@ -366,6 +512,28 @@
 
   &.active {
     .promo-use {
+      &__main {
+        margin-bottom: 0;
+
+        &__wrapper {
+          column-count: 2;
+          column-gap: 16px;
+          padding: 0px 32px;
+          @media(@xs){
+            column-count: auto;
+            column-gap: 0px;
+            padding: 0;
+          }
+
+          .promo-use__main {
+            height: 300px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-bottom: 1px solid #D3D3D3;
+          }
+        }
+      }
+
       &__block {
         &__wrapper {
           .make-xs-column(12);
@@ -374,6 +542,12 @@
           &--history {
             .make-xs-column(24);
             padding: 0px 8px;
+
+            .promo-use__block {
+              @media(@xs){
+                background-color: transparent;
+              }
+            }
           }
         }
       }
@@ -401,11 +575,13 @@
   }
 }
 
-
 .promo-general {
   padding-top: 27px;
   padding-bottom: 27px;
   margin-bottom: 29px;
+  @media(@xs){
+    margin-bottom: 0;
+  }
 
   .head-h2 {
     margin-bottom: 18px;
@@ -419,3 +595,25 @@
 
   }
 }
+
+.promo-fixed {
+  position: fixed;
+  z-index: 1;
+  top: 300px;
+  right: 0;
+  padding: 12px 5px 0px 16px;
+  text-transform: uppercase;
+  width: 99px;
+  height: 62px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #dcdcdc;
+  text-align: left;
+  color: #fff;
+
+  &__title {
+    .head-h4;
+    color: white;
+  }
+}
+
+

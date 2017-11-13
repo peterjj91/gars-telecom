@@ -2,6 +2,23 @@
 .content {
   padding: 48px 0px 77px 0px;
   background: #F2F2F2;
+  @media(@sm){
+    padding: 15px 15px 43px 15px;
+  }
+  @media(@xs){
+    //padding-left: 32px;
+    //padding-right: 32px;
+    //padding-top: 26px;
+  }
+  @media(max-width: 550px){
+    padding-top: 18px;
+    padding-bottom: 31px;
+  }
+  
+  &__wrapper {
+    background-color: #fff;
+    z-index: 1;
+  }
 
   &__container {
     .container();
@@ -14,10 +31,55 @@
     background-color: white;
     padding: 26px 33px 20px;
     margin-bottom: 24px;
+    @media(@sm){
+      padding: 26px 19px 20px 19px;
+      margin-bottom: 87px;
+    }
+    @media(@xs){
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0px;
+      margin-bottom: 4px;
+      padding-bottom: 10px;
+      background-color: transparent;
+    }
 
     &--clear {
       padding: 0;
       background: transparent;
+    }
+
+    &--services {
+      @media(@sm){
+        margin-bottom: 24px;
+      }
+      @media(@xs){
+        margin-bottom: 10px;
+      }
+      @media(max-width: 550px){
+        margin-bottom: 18px;
+      }
+    }
+
+    &--three {
+      @media(@sm){
+        margin-bottom: 24px;
+      }
+      @media(@xs){
+        margin-bottom: 3px;
+      }
+    }
+
+    &--general {
+      @media(@sm){
+        margin-bottom: 37px;
+      }
+      @media(@xs){
+        margin-bottom: 21px;
+      }
+      @media(max-width: 550px){
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -25,6 +87,9 @@
     .head-h2;
     .text--promo;
     margin-bottom: 8px;
+    @media(max-width: 550px){
+      margin-bottom: 17px;
+    }
 
     &__nav {
       display: inline-block;
@@ -32,6 +97,14 @@
       padding: 0;
       margin-left: 16px;
       margin-bottom: 25px;
+      @media(@xs){
+        margin-bottom: 6px;
+      }
+      @media(max-width: 550px){
+        display: block;
+        margin-left: 0;
+        margin-bottom: -15px;
+      }
 
       li {
         display: inline-block;
@@ -49,6 +122,9 @@
       .text--promo;
       font-family: @Roboto;
       text-decoration: underline;
+      @media(max-width: 550px){
+        vertical-align: top;
+      }
     }
   }
 }

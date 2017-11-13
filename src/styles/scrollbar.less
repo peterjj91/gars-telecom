@@ -2,9 +2,36 @@
 .scrollbar {
   overflow: hidden;
   height: 601px;
+  @media(@xs){
+    height: auto;
+  }
 
+  .mCSB_scrollTools_vertical {
+    .mCSB_dragger_bar {
+      width: 8px !important;
+    }
+  }
+
+  .mCSB_horizontal {
+    .mCSB_scrollTools_horizontal {
+      height: 8px;
+
+      .mCSB_draggerContainer {
+        background: #D3D3D3;
+        border-radius: 10px;
+      }
+
+      .mCSB_dragger_bar {
+        margin: 0;
+        height: 8px;
+      }
+    }
+
+    .mCSB_container {
+      margin-bottom: 25px;
+    }
+  }
 }
-
 
 
 .mCSB {
@@ -26,7 +53,7 @@
 }
 
 .mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  width: 8px;
+  //width: 8px;
   background-color: #33CCFF !important;
   border-radius: 20px;
 
@@ -46,4 +73,44 @@
 .mCSB_scrollTools .mCSB_buttonRight{
   background-image: url(../img/mCSB_buttons.png);
   background-repeat: no-repeat;
+}
+
+
+// scroll to top
+.cd-top {
+  position: fixed;
+  bottom: 200px;
+  left: 100px;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pointer-promo {
+    width: 37px;
+    height: 37px;
+    stroke: #3CF;
+    border: 2px solid #3CF;
+    background: transparent;
+  }
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }

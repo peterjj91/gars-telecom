@@ -62,7 +62,7 @@
         </div>
 
         <div class="footer__info">
-            <div class="footer__info__block">
+            <div class="footer__info__block footer__info__block--info">
                 <div class="footer__map__title">© 1999-2017 Гарс Телеком</div>
 
                 <ul class="footer__polit">
@@ -110,54 +110,77 @@
     </div>
 </footer>
 
+<a href="#0" class="cd-top">
+    <div class="pointer-promo pointer-promo--top">
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#pointer-full"></use></svg>
+    </div>
+</a>
+
+<div class="promo-fixed">
+    <div class="promo-fixed__title">Оставить заявку</div>
+</div>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog--main">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    <svg class="" width="17px" height="17px">
-                        <use xlink:href="icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">Напишите нам</h4>
-            </div>
+            <div class="modal__title">Обращение к генеральному <br> директору</div>
 
-            <div class="modal-body">
-                <div class="modal__form">
-                    <form action="">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <div class="icon-mini icon-mini--close">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#close"></use></svg>
+                </div>
+            </button>
+
+            <div class="modal__form">
+                <form action="">
+                    <div class="modal__form__profile">
+                        <div class="modal__form__profile__img">
+                            <img src="img/profile-img1.png" alt="">
+                        </div>
+
+                        <div class="modal__form__profile__title">
+                            Александр Шинкарёв
+                        </div>
+
+                        <div class="modal__form__profile__position">
+                            Генеральный директор «Гарс Телеком»
+                        </div>
+                    </div>
+
+                    <div class="modal__form__content">
                         <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваше имя</label>
-                            </div>
+                            <label class="form-input">
+                                <p class="form-input__text">Представьтесь, пожалуйста</p>
+
+                                <input type="text" class="input form-input__input" placeholder="Например, Лаврентьев Михаил">
+                            </label>
                         </div>
 
                         <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваша почта</label>
-                            </div>
-                        </div>
+                            <label class="form-input">
+                                <p class="form-input__text">Текст вашего обращения</p>
 
-                        <div class="modal__form__block">
-                            <div class="input-material">
-                                <input type="text" placeholder="" required>
-                                <hr>
-                                <label>Ваше сообщение</label>
-                            </div>
+                                <textarea class="input form-input__input" placeholder="Формулируйте вопрос как можно точнее – это ускорит его решение"></textarea>
+                            </label>
                         </div>
 
                         <div class="modal__form__submit">
-                            <a href="#" class="btn btn__promo">Отправить</a>
+                            <a href="#" class="btn btn__main btn__main--light">
+                                <span class="btn__main__text">Отправить вопрос</span>
+
+                                <svg class="btn__main__icon" width="27px" height="18px">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./icons/icons.svg#message"></use>
+                                </svg>
+                            </a>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+</main>
 </body>
 </html>
