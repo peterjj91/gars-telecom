@@ -235,7 +235,7 @@
   display: none;
   background-color: #244775;
   font-size: 14px;
-  padding: 48px 48px 129px;
+  padding: 48px 48px 0px;
   color: white;
   @media(@xs){
     //width: 100%;
@@ -340,6 +340,9 @@
     list-style: none;
     padding: 0;
     margin-top: 66px;
+    @media(@xs){
+      margin-bottom: 20px;
+    }
 
     li {
       margin-bottom: 24px;
@@ -366,6 +369,15 @@
     width: 100%;
     background-color: #143056;
     display: table;
+    @media(@xs){
+      position: relative;
+      left: auto;
+      bottom: auto;
+    }
+
+    &__wrapper {
+      margin: 0px -48px;
+    }
 
     &__content {
       display: table-cell;
