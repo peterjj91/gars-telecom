@@ -91,7 +91,7 @@ gulp.task('build:js', function(){
     gulp.src(paths.bower.concat(paths.src.js))
         .pipe(filter(['**/*.js']))
         .pipe(concat('main.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(paths.build.js))
         .pipe(browserSync.reload({stream:true}));
 });

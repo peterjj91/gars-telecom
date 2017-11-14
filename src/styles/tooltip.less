@@ -1,6 +1,7 @@
 
 .tooltip {
   outline: none;
+  cursor: pointer;
 
   &__promo {
     width: 16px;
@@ -14,17 +15,32 @@
     border-radius: 50%;
     font-size: 0;
     background: #D3D3D3;
+    &:hover {
+      background-color: #33CCFF;
+    }
 
     &--orange {
       background-color: #244775;
+
+      &:hover {
+        background-color: #244775;
+      }
     }
 
     &--blue {
       background-color: #FF4C00;
+
+      &:hover {
+        background-color: #FF4C00;
+      }
     }
 
     &--sea {
       background-color: #33CCFF;
+
+      &:hover {
+        background-color: #33CCFF;
+      }
     }
 
     svg {

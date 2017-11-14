@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
 </head>
-
 <body>
 
 <div id="navbar-main" class="slideout-menu">
@@ -327,13 +326,15 @@
                 <label class="form-input">
                     <p class="form-input__text">Логин</p>
 
-                    <input type="text" class="input form-input__input" placeholder="">
+                    <div class="form-input__input__wrapper">
+                        <input type="text" class="input form-input__input" placeholder="">
 
-                    <span class="form-input__tooltip">
-                        <button class="tooltip tooltip__promo" data-arrow="true" data-position="right" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
-                            <svg><use xlink:href="icons/icons.svg#question"></use></svg>
-                        </button>
-                    </span>
+                        <span class="form-input__tooltip">
+                            <div class="tooltip tooltip__promo" data-arrow="true" data-position="right" title="Комментарий модератора, объясняющий, что нужно поправить или где допущена опечатка или ошибка">
+                                <svg><use xlink:href="icons/icons.svg#question"></use></svg>
+                            </div>
+                        </span>
+                    </div>
                 </label>
             </li>
 

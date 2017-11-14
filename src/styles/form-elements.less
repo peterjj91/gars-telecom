@@ -193,16 +193,25 @@
   }
 
   &__input {
+    box-sizing: border-box;
     border: 2px solid #D8D8D8;
     padding: 9px 13px 6px 13px;
-    box-sizing: border-box;
+    width: 100%;
 
     &:focus {
       border-color: #33CCFF;
     }
+
+    &__wrapper {
+      position: relative;
+      padding-right: 24px;
+    }
   }
 
   &__tooltip {
+    position: absolute;
+    top: 10px;
+    right: 0px;
     margin-left: 5px;
   }
 }

@@ -238,7 +238,8 @@
   padding: 48px 48px 0px;
   color: white;
   @media(@xs){
-    //width: 100%;
+    padding: 23px 23px 0;
+    text-align: center;
   }
 
   .nav {
@@ -312,6 +313,8 @@
 
 
 .sidemenu {
+
+
   &__close {
     position: absolute;
     top: 42px;
@@ -323,6 +326,9 @@
     vertical-align: top;
     border: 1px solid white;
     margin-bottom: 12px;
+    @media(@xs){
+      margin-bottom: 6px;
+    }
   }
 
   &__name {
@@ -341,11 +347,15 @@
     padding: 0;
     margin-top: 66px;
     @media(@xs){
-      margin-bottom: 20px;
+      margin-bottom: 100px;
+      margin-top: 33px;
     }
 
     li {
       margin-bottom: 24px;
+      @media(@xs){
+        margin-bottom: 15px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -377,6 +387,9 @@
 
     &__wrapper {
       margin: 0px -48px;
+      @media(@xs){
+        margin: 0 -22px;
+      }
     }
 
     &__content {
