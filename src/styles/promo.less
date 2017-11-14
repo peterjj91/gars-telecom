@@ -54,6 +54,7 @@
   border: 1px solid transparent;
   vertical-align: top;
   transition: @transition-basic;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
@@ -272,13 +273,23 @@
     transform: translate(-50%, 0);
     top: -19px;
     left: 50%;
+
+    &--active {
+      .pointer-promo {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__content {
     display: none;
     overflow: hidden;
-    padding: 19px 33px;
+    padding: 62px 33px 46px 33px;
     background: #E9E9E9;
+  }
+
+  &__name {
+    margin-bottom: 20px;
   }
 
   .promo-drop__icon--active + .promo-drop__content {
@@ -291,6 +302,11 @@
     @media(@xs){
       display: none;
     }
+  }
+
+  &--profile {
+    margin-bottom: -24px;
+    margin-top: 46px;
   }
 }
 
