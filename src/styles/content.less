@@ -6,13 +6,15 @@
     padding: 15px 15px 43px 15px;
   }
   @media(@xs){
-    //padding-left: 32px;
-    //padding-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     //padding-top: 26px;
   }
   @media(max-width: 550px){
     padding-top: 18px;
     padding-bottom: 31px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   &__wrapper {
@@ -85,6 +87,11 @@
     &--profile {
       padding-bottom: 23px;
       margin-bottom: 40px;
+      @media(@xs){
+        padding: 24px;
+        background: white;
+        margin-bottom: 16px;
+      }
     }
   }
 

@@ -5,11 +5,22 @@
   vertical-align: top;
   margin-bottom: 47px;
   position: relative;
+  @media(@xs){
+    padding-top: 24px;
+    margin-bottom: 30px;
+  }
 
   &__title {
+    .head-h1;
+    .text--promo;
     line-height: normal;
     margin-top: -10px;
     margin-bottom: 14px;
+    @media(@xs){
+      .head-h2;
+      .text--promo;
+      margin-bottom: 13px;
+    }
   }
 
   &__text {
@@ -22,25 +33,71 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
+  @media(@xs){
+
+  }
 
   &__img {
     float: left;
+    @media(@xs){
+      padding-right: 16px;
+      padding-bottom: 20px;
+    }
 
     img {
       max-width: 158px;
+      @media(@xs){
+        max-width: 80px;
+      }
     }
   }
 
   &__description {
-    .make-xs-column(16.2);
     .make-sm-column(16.2);
     .make-md-column(16.2);
     .make-lg-column(16.2);
     float: right !important;
+    @media(@xs){
+      width: auto;
+      float: none !important;
+    }
   }
 
   &__title {
     margin-bottom: 56px;
+    @media(@xs){
+      line-height: normal;
+      margin-top: -4px;
+      height: 84px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__table {
+    @media(@xs){
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    thead {
+      tr {
+        td {
+          @media(@xs){
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          @media(@xs){
+            padding-top: 0;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -64,20 +121,53 @@
     padding-bottom: 15px;
     border-bottom: 1px dashed #DADADA;
     margin-bottom: 22px;
+    @media(@xs){
+      padding-bottom: 0px;
+      margin-bottom: 23px;
+    }
 
     &:last-child {
       margin-bottom: 0;
       border-bottom: none;
+      @media(@xs){
+        border-bottom: 1px dashed #DADADA;
+      }
     }
   }
 
   &__name {
+    .head-h2;
+    .text--promo;
     margin-bottom: 64px;
+
+    @media(@xs){
+      .head-h3;
+      .text--promo;
+      line-height: normal;
+      padding-right: 250px;
+      margin-bottom: 32px;
+    }
   }
 
   &__title {
     display: block;
     margin-bottom: 2px;
+  }
+
+  &__input {
+    .head-h3;
+    height: 45px;
+    vertical-align: top;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    color: @promo;
+    resize: none;
+
+    @media(@xs){
+      padding-top: 2px;
+      margin-top: -4px;
+    }
   }
 
   &__text {
@@ -93,13 +183,25 @@
   &--set {
     padding-top: 10px;
     padding-bottom: 7px;
+    @media(@xs){
+      padding-top: 0;
+      padding-bottom: 16px;
+      margin-top: -2px;
+    }
   }
 
   &--drop {
     margin-top: 4px;
 
-    .profile-setting__row {
-      padding-right: 320px;
+    .profile-setting {
+      &__row {
+        padding-right: 320px;
+        @media(@xs){
+          display: inline-block;
+          width: 100%;
+          vertical-align: top;
+        }
+      }
     }
   }
 }
@@ -110,30 +212,70 @@
   margin: 0;
 
   li {
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 5px;
   }
 
   a {
 
   }
 
+  p {
+    margin: 0;
+  }
+
   &--fly {
     position: absolute;
     top: 10px;
     right: -1px;
+    @media(@xs){
+      top: 2px;
+      right: -2px;
+    }
   }
 }
 
 .profile-contact {
   display: flex;
-  padding: 54px 0 34px 0px;
+  padding: 28px 0px 34px 0px;
+  margin-bottom: 63px;
+  @media(@xs){
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+    margin-top: 40px;
+    padding: 0px 225px 0px 0px;
+    margin-bottom: 30px;
+  }
 
   &__cell {
     flex: 1;
     align-self: center;
+    @media(@xs){
+
+    }
 
     &--btn {
       text-align: right;
+
+      @media(@xs){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+      }
+    }
+  }
+
+  &__title {
+    .head-h1;
+    .text--promo;
+
+    @media(@xs){
+      .head-h2;
+      .text--promo;
+      margin-bottom: 9px;
     }
   }
 }
