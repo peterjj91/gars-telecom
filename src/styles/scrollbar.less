@@ -80,12 +80,16 @@
 .cd-top {
   position: fixed;
   bottom: 200px;
-  left: 100px;
+  left: auto;
+  right: 10%;
   border-radius: 50%;
   z-index: 10;
   opacity: 0;
   transition: opacity .3s 0s, visibility 0s .3s;
   cursor: pointer;
+  @media(@xs){
+    display: none;
+  }
 
   svg {
     width: 100%;

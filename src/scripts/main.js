@@ -31,11 +31,31 @@ $(function () {
     $('.slider-mini').slick({
         dots: false,
         arrows: true,
-        infinite: true,
+        infinite: false,
         speed: 300,
         cssEase: 'linear',
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    variableWidth: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    variableWidth: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    variableWidth: true
+                }
+            }
+        ]
     });
 });
 

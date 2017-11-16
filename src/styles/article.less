@@ -5,6 +5,22 @@
   @media(@xs){
     padding: 11px 0 0;
   }
+  @media(max-width: 650px){
+    padding-top: 0;
+  }
+
+  &--mobile {
+    display: none !important;
+    @media(@xs){
+      display: block !important;
+    }
+  }
+
+  &--desktop {
+    @media(@xs){
+      display: none !important;
+    }
+  }
 
   &__back {
     width: 100%;
@@ -14,6 +30,12 @@
     margin-bottom: 30px;
     @media(@xs){
       padding-bottom: 18px;
+    }
+    @media(max-width: 650px){
+      padding-top: 8px;
+      padding-left: 49px;
+      padding-bottom: 23px;
+      margin-bottom: 22px;
     }
 
     &__icon {
@@ -28,9 +50,14 @@
 
     &__title {
       .head-h2;
-      .text--promo;
+      color: @promo;
       display: inline-block;
       vertical-align: middle;
+
+      @media(max-width: 650px){
+        .head-h3;
+        color: @promo;
+      }
     }
   }
 
@@ -39,17 +66,28 @@
   }
 
   &__content {
-    .make-xs-column(24);
+    //.make-xs-column(24);
     .make-sm-column(13.9);
     float: left !important;
 
     @media(@xs){
-      float: right !important;
+      float: none !important;
+      padding-top: 71px;
+      max-width: 525px;
+      margin: 0 auto;
+      clear: both;
+    }
+    @media(max-width: 650px){
+      display: none;
     }
 
     img {
       width: 100%;
       margin: 20px 0px 40px 0px;
+      @media(@xs){
+        margin-top: 44px;
+        margin-bottom: 73px;
+      }
     }
   }
 
@@ -59,9 +97,46 @@
     .make-sm-column-offset(2.3);
     float: right !important;
     padding-top: 58px;
-
     @media(@xs){
       float: left !important;
+      padding-top: 14px;
+    }
+
+
+    &__info {
+      .row;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+
+    &__table {
+      @media(@xs){
+        width: 50%;
+        float: left;
+        padding: 0px 10px;
+      }
+      @media(max-width: 650px){
+        width: auto;
+        float: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: -5px;
+        margin-right: -5px;
+        //width: 100%;
+      }
+    }
+
+    &__slider {
+      @media(@xs){
+        width: 50%;
+        float: left;
+        padding: 0px 10px;
+      }
+      @media(max-width: 650px){
+        width: 100%;
+        margin-bottom: 27px;
+      }
     }
 
     .table {
@@ -73,18 +148,49 @@
     .head-h4;
     color: @unname;
     margin-bottom: 6px;
+    @media(@xs){
+      margin-bottom: 8px;
+    }
+    @media(max-width: 650px){
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     .head-h1;
     color: @promo;
     margin-bottom: 8px;
+    @media(@xs){
+      .head-h2;
+      color: @promo;
+    }
   }
 
   &__manager {
     display: block;
     text-align: right;
     margin-bottom: 50px;
+
+    @media(@xs){
+      margin-top: 50px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    @media(max-width: 650px){
+      margin-top: 4px;
+    }
+
+    .btn {
+      @media(max-width: 650px){
+        margin-bottom: 15px;
+      }
+
+      &:last-child {
+        @media(max-width: 650px){
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   p {
@@ -92,9 +198,19 @@
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 20px;
+    @media(@xs){
+      margin-bottom: 25px;
+    }
   }
 
   &__services {
     margin-top: 45px;
+    @media(@xs){
+      margin-top: 88px;
+      //margin-right: -32px;
+    }
+    @media(max-width: 650px){
+      margin-top: 29px;
+    }
   }
 }
