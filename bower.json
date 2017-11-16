@@ -25,6 +25,7 @@
     "slick-carousel": "^1.6.0",
     "tippyjs": "^1.4.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
-    "slideout.js": "^1.0.1"
+    "slideout.js": "^1.0.1",
+    "stacktable.js": "^1.0.3"
   }
 }

@@ -15,6 +15,30 @@ $(function () {
     });
 });
 
+$(function () {
+    $('.slider-side').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+
+$(function () {
+    $('.slider-mini').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+});
+
 $(document).on('click', '.dropdown .dropdown-menu', function (e) {
     e.stopPropagation();
 });
@@ -105,13 +129,16 @@ $(document).ready(function(){
         });
 });
 
-
 $(document).on('click','.promo-drop__icon',function(){
     $(this).toggleClass("promo-drop__icon--active");
 });
 
 $(document).on('click','.promo-use__collapse',function(){
     $(".promo-use").toggleClass("active");
+});
+
+$(document).on('click','.service__table__open',function(){
+    // $(this).parent().toggleClass("service__table__drop--active");
 });
 
 $(function() {
@@ -158,4 +185,37 @@ $(function() {
     })();
 
     cbpHorizontalMenu.init();
+});
+
+$(document).ready(function(){
+    $('.responsive-table').stacktable();
+});
+
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+        offset_opacity = 1200,
+        //duration of the top scrolling animation (in ms)
+        scroll_top_duration = 700,
+        //grab the "back to top" link
+        $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+        event.preventDefault();
+        $('body,html').animate({
+                scrollTop: 0 ,
+            }, scroll_top_duration
+        );
+    });
+
 });

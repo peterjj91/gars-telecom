@@ -9,6 +9,10 @@
     padding-top: 24px;
     margin-bottom: 30px;
   }
+  @media(max-width: 650px){
+    padding-top: 13px;
+    margin-bottom: 20px;
+  }
 
   &__title {
     .head-h1;
@@ -21,10 +25,26 @@
       .text--promo;
       margin-bottom: 13px;
     }
+
+    &--support {
+      @media(@sm){
+        margin-bottom: 0px;
+      }
+
+      @media(max-width: 650px){
+        margin-bottom: 13px;
+      }
+    }
   }
 
   &__text {
+    .head-h3;
+    .text--light;
     max-width: 600px;
+
+    &--support {
+
+    }
   }
 }
 
@@ -42,6 +62,10 @@
     @media(@xs){
       padding-right: 16px;
       padding-bottom: 20px;
+    }
+    @media(max-width: 650px){
+      padding-right: 0;
+      width: 100%;
     }
 
     img {
@@ -61,9 +85,31 @@
       width: auto;
       float: none !important;
     }
+    @media(max-width: 650px){
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &--support {
+      width: 100%;
+      padding: 27px 32px;
+      background: white;
+
+      @media(@xs){
+        padding: 0;
+        background: transparent;
+        margin-bottom: 16px;
+      }
+      @media(max-width: 650px){
+
+      }
+    }
   }
 
   &__title {
+    .head-h2;
+    .text--promo;
     margin-bottom: 56px;
     @media(@xs){
       line-height: normal;
@@ -71,12 +117,31 @@
       height: 84px;
       margin-bottom: 10px;
     }
+    @media(max-width: 650px){
+      .head-h3;
+      .text--promo;
+      height: auto;
+    }
+
+    &--support {
+      margin-bottom: 18px;
+      @media(@xs){
+        display: none;
+      }
+    }
   }
 
   &__table {
     @media(@xs){
       margin-top: 40px;
       margin-bottom: 0;
+    }
+    @media(max-width: 650px){
+      margin-top: 24px;
+    }
+
+    &__wrapper {
+
     }
 
     thead {
@@ -98,6 +163,31 @@
         }
       }
     }
+
+    &--support {
+      border-bottom: 1px dashed #DADADA;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      thead {
+        tr {
+          td {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            padding-top: 6px;
+            border-top: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -110,11 +200,26 @@
   &__row {
     display: flex;
     margin: 0px -10px;
+    @media(max-width: 650px){
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      padding-right: 10px;
+    }
   }
 
   &__block {
     flex: 1;
     padding: 0px 10px;
+    @media(max-width: 650px){
+      margin-bottom: 24px;
+    }
+
+    &:last-child {
+      @media(max-width: 650px){
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__line {
@@ -129,6 +234,7 @@
     &:last-child {
       margin-bottom: 0;
       border-bottom: none;
+      padding-bottom: 0;
       @media(@xs){
         border-bottom: 1px dashed #DADADA;
       }
@@ -146,6 +252,9 @@
       line-height: normal;
       padding-right: 250px;
       margin-bottom: 32px;
+    }
+    @media(max-width: 650px){
+      padding-right: 30px;
     }
   }
 
@@ -182,11 +291,15 @@
 
   &--set {
     padding-top: 10px;
-    padding-bottom: 7px;
     @media(@xs){
       padding-top: 0;
       padding-bottom: 16px;
       margin-top: -2px;
+      padding-right: 60px;
+    }
+    @media(max-width: 650px){
+      padding-right: 0px;
+      padding-bottom: 12px;
     }
   }
 
@@ -200,6 +313,10 @@
           display: inline-block;
           width: 100%;
           vertical-align: top;
+          padding-right: 35px;
+        }
+        @media(max-width: 650px){
+          padding-right: 25px;
         }
       }
     }
@@ -210,27 +327,72 @@
   padding: 0;
   list-style: none;
   margin: 0;
+  @media(@xs){
 
-  li {
+  }
+
+  &__check {
     display: inline-block;
-    margin-left: 5px;
+    vertical-align: middle;
+
+    p {
+      margin: 0;
+      @media(@xs){
+        margin-bottom: 20px;
+      }
+      @media(max-width: 650px){
+        margin-bottom: 9px;
+      }
+    }
   }
 
-  a {
-
-  }
-
-  p {
+  &__list {
+    padding: 0;
+    list-style: none;
     margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+
+    li {
+      display: inline-block;
+      margin-left: 5px;
+      @media(@xs){
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
   }
+
 
   &--fly {
     position: absolute;
     top: 10px;
     right: -1px;
     @media(@xs){
-      top: 2px;
-      right: -2px;
+      position: initial;
+      top: auto;
+      right: auto;
+    }
+
+    .edit-button {
+      &__check {
+        @media(@xs){
+          position: relative;
+          top: auto;
+          right: auto;
+          margin-bottom: 15px;
+        }
+      }
+
+      &__list {
+        @media(@xs){
+          position: absolute;
+          top: 2px;
+          right: -1px;
+        }
+      }
     }
   }
 }
@@ -246,7 +408,12 @@
     position: relative;
     margin-top: 40px;
     padding: 0px 225px 0px 0px;
-    margin-bottom: 30px;
+    margin-bottom: 55px;
+  }
+  @media(max-width: 650px){
+    margin-top: 18px;
+    padding-right: 0;
+    margin-bottom: 40px;
   }
 
   &__cell {
@@ -265,6 +432,120 @@
         right: 0;
         width: auto;
       }
+      @media(max-width: 650px){
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__box {
+    .make-xs-column(12);
+    .make-sm-column(24);
+    @media(@xs){
+      padding: 0px 8px;
+      float: none !important;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 10px;
+    }
+    @media(max-width: 650px){
+      width: 100%;
+    }
+
+    &__wrapper {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      @media(@xs){
+        margin: 0px -8px;
+        width: auto;
+        display: block;
+        font-size: 0;
+      }
+    }
+
+    .profile-contact__box {
+      @media(@xs){
+
+      }
+    }
+
+    .profile-setting__block {
+      @media(@xs){
+        padding-bottom: 3px;
+        border-bottom: 1px dashed #DADADA;
+        margin-bottom: 21px;
+      }
+
+      &:last-child {
+        @media(@xs){
+          border-bottom: none;
+        }
+        @media(max-width: 650px){
+          margin-bottom: 0;
+        }
+
+        .profile-setting__line {
+          &:last-child {
+
+          }
+        }
+      }
+    }
+
+    .profile-setting {
+      @media(@xs){
+        margin: -2px 0px 0px 0px;
+      }
+    }
+
+    .profile-setting__line {
+      @media(@xs){
+        border-bottom: none;
+      }
+    }
+
+    .profile-setting__title {
+      line-height: normal;
+
+      @media(@xs){
+        margin-bottom: 2px;
+      }
+    }
+
+    .profile-setting__input {
+      min-height: 75px;
+
+      @media(@xs){
+        min-height: initial;
+        height: auto;
+      }
+    }
+
+    .promo-drop__content {
+      padding-top: 34px;
+      padding-bottom: 25px;
+    }
+
+    .profile-setting__line {
+      @media(@xs){
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .promo-drop {
+      margin-top: 10px;
+      margin-bottom: -23px;
+
+      @media(@xs){
+        margin-left: -24px;
+        margin-right: -24px;
+      }
     }
   }
 
@@ -276,6 +557,69 @@
       .head-h2;
       .text--promo;
       margin-bottom: 9px;
+    }
+  }
+}
+
+.profile-support {
+
+  &__table {
+    display: table;
+    width: 100%;
+    padding-bottom: 21px;
+    border-bottom: 1px dashed #DADADA;
+    margin-bottom: 23px;
+    @media(@xs){
+      display: inline-block;
+      vertical-align: top;
+      background: white;
+      padding: 23px 25px;
+      border-bottom: none;
+      margin-bottom: 30px;
+    }
+    @media(max-width: 650px){
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      //padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    &__head {
+
+    }
+
+    &__cell {
+      display: table-cell;
+      vertical-align: top;
+      @media(@xs){
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 29px;
+      }
+
+      &:last-child {
+        @media(@xs){
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__text {
+      margin-top: 8px;
+      @media(@xs){
+        margin-top: 6px;
+      }
+    }
+
+    &__title {
+      margin-top: 5px;
+      line-height: normal;
+      @media(@xs){
+        margin-top: 0px;
+      }
     }
   }
 }

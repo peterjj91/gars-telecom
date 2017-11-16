@@ -1,0 +1,100 @@
+
+.article-main {
+  width: 100%;
+  padding: 15px 0px 0px 0px;
+  @media(@xs){
+    padding: 11px 0 0;
+  }
+
+  &__back {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 33px 60px;
+    border-bottom: 2px solid #DADADA;
+    margin-bottom: 30px;
+    @media(@xs){
+      padding-bottom: 18px;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      .pointer-promo {
+        background-color: transparent;
+      }
+    }
+
+    &__title {
+      .head-h2;
+      .text--promo;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__wrapper {
+    .row;
+  }
+
+  &__content {
+    .make-xs-column(24);
+    .make-sm-column(13.9);
+    float: left !important;
+
+    @media(@xs){
+      float: right !important;
+    }
+
+    img {
+      width: 100%;
+      margin: 20px 0px 40px 0px;
+    }
+  }
+
+  &__sidebar {
+    .make-xs-column(24);
+    .make-sm-column(7.8);
+    .make-sm-column-offset(2.3);
+    float: right !important;
+    padding-top: 58px;
+
+    @media(@xs){
+      float: left !important;
+    }
+
+    .table {
+      margin-top: 4px;
+    }
+  }
+
+  &__date {
+    .head-h4;
+    color: @unname;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    .head-h1;
+    color: @promo;
+    margin-bottom: 8px;
+  }
+
+  &__manager {
+    display: block;
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__services {
+    margin-top: 45px;
+  }
+}

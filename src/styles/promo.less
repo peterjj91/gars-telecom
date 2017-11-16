@@ -292,8 +292,119 @@
     margin-bottom: 20px;
   }
 
+  &__fresh {
+    margin: -11px -37px 0px;
+    @media(@sm){
+      margin-left: -45px;
+      margin-right: -45px;
+    }
+    @media(@xs){
+      margin-left: -62px;
+      margin-right: -62px;
+    }
+    @media(max-width: 650px){
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .promo-drop {
+      &__content {
+        padding: 45px 30px 64px 40px;
+        background-color: @promo;
+        display: block;
+        overflow: visible;
+        position: relative;
+        @media(max-width: 650px){
+          padding: 15px 15px 20px 15px;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 67px;
+          top: -9px;
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-right-width: 6px;
+          border-left-width: 6px;
+          border-bottom: 9px solid @promo;
+
+          @media(max-width: 650px){
+            right: auto;
+            left: 80px;
+          }
+        }
+      }
+    }
+
+    * {
+      color: white !important;
+    }
+  }
+
   .promo-drop__icon--active + .promo-drop__content {
     display: block;
+  }
+
+  &__pop {
+    display: flex;
+    padding-right: 60px;
+    @media(@xs){
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+    }
+    @media(max-width: 650px){
+      padding-right: 45px;
+    }
+
+    &__cell {
+      flex: 1;
+      align-self: center;
+      @media(@xs){
+        flex: none;
+        margin-bottom: 20px;
+      }
+
+      &:last-child {
+        @media(@xs){
+          margin-bottom: 0;
+        }
+      }
+
+      &--btn {
+        text-align: right;
+        @media(@xs){
+          text-align: left;
+        }
+      }
+    }
+
+    &__title {
+      .head-h2;
+      line-height: normal;
+      color: @promo;
+      @media(max-width: 650px){
+        .head-h3;
+        line-height: normal;
+        color: @promo;
+      }
+    }
+
+    &__text {
+
+    }
+
+    &__content {
+
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
   }
 
   &--use {
@@ -307,6 +418,14 @@
   &--profile {
     margin-bottom: -23px;
     margin-top: 46px;
+    @media(@sm){
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    @media(max-width: 650px){
+      margin-top: 10px;
+      margin-bottom: -32px;
+    }
   }
 }
 
