@@ -1,0 +1,119 @@
+
+.documents {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  @media(@xs){
+    padding-top: 0;
+  }
+  @media(max-width: 650px){
+    padding-top: 30px;
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 58px;
+    @media(@xs){
+      margin-bottom: 27px;
+    }
+    @media(max-width: 650px){
+      margin-bottom: 32px;
+    }
+
+    &__right {
+      float: right;
+      margin-top: 33px;
+      @media(@xs){
+        float: none;
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 6px;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 12px;
+      @media(@xs){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        @media(max-width: 650px){
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .bootstrap-select {
+      @media(max-width: 650px){
+
+      }
+    }
+  }
+
+  &__content {
+    background: white;
+    padding: 26px 33px 26px 33px;
+    @media(@xs){
+      padding: 0;
+      background: transparent;
+    }
+  }
+
+  &__title {
+    .head-h2;
+    color: @promo;
+    margin-bottom: 16px;
+    @media(@xs){
+      margin-bottom: 26px;
+    }
+    @media(max-width: 650px){
+      display: none;
+    }
+  }
+
+  &__more {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+    @media(@xs){
+      margin-top: 20px;
+    }
+    @media(max-width: 650px){
+      margin-top: 24px;
+    }
+  }
+
+  &--calls {
+    padding-top: 8px;
+
+    .documents {
+      &__nav {
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  &--services {
+    padding-top: 8px;
+    margin-bottom: 40px;
+
+    .documents__title {
+      @media(@xs){
+        .head-h2;
+        color: @promo;
+        display: block;
+      }
+    }
+  }
+}

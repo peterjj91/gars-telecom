@@ -81,3 +81,74 @@
 
 
 
+
+.bootstrap-select {
+  outline: none !important;
+
+  & > .dropdown-toggle {
+    .head-h3;
+    color: @promo !important;
+    background-color: white;
+    border: 2px solid #E9E9E9;
+    padding: 9px 40px 12px 22px;
+    //outline: none !important;
+
+
+    &:focus {
+      outline: none !important;
+
+
+      &:active {
+        border-color: #E9E9E9;
+      }
+    }
+
+    &:active {
+      background: white;
+
+      &:focus {
+        background: white;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    margin: 0;
+    border-radius: 0px;
+    box-shadow: none;
+    border-color: #E9E9E9;
+
+    li {
+      width: 100%;
+      margin-right: 0;
+
+      a {
+        outline: none;
+      }
+    }
+  }
+
+  .caret {
+    border-top: 6px dashed @main;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    right: 23px !important;
+  }
+
+  &.open {
+    & > .dropdown-toggle {
+      box-shadow: none;
+      background-color: white;
+      border: 2px solid #E9E9E9;
+
+      &:hover {
+        background: white;
+        border: 2px solid #E9E9E9;
+      }
+
+      &:focus {
+
+      }
+    }
+  }
+}

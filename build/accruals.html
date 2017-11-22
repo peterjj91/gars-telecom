@@ -219,22 +219,214 @@
 <div class="content">
     <div class="content__container">
 
-        <ul>
-            <li><a href="elements.html">Элементы</a></li>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#" class="btn" data-toggle="modal" data-target="#myModal">Модальное окно</a></li>
-            <li><a href="login.html">Логин</a></li>
-            <li><a href="profile.html">Профиль</a></li>
-            <li><a href="service.html">Услуги</a></li>
-            <li><a href="support.html">Поддержка</a></li>
-            <li><a href="article.html">Статья</a></li>
-            <li><a href="documents.html">Документы</a></li>
-            <li><a href="calls.html">Отчет по звонкам</a></li>
-            <li><a href="traffic.html">Отчет по трафику</a></li>
-            <li><a href="accruals.html">Отчёт по начислениям</a></li>
-            <li><a href="services-report.html">Заявки на включение услуг</a></li>
-            <li><a href="offers.html">Актуальные акции</a></li>
-        </ul>
+        <div class="profile-top">
+            <div class="profile-top__title">Отчёт по начислениям</div>
+
+            <div class="profile-top__text">Текст о стрнице отчета по начислениям на две строки. Текст о странице отчета по начислениям на две строки. </div>
+        </div>
+
+        <div class="documents documents--calls">
+            <div class="promo-warning promo-warning--main">
+                <svg class="promo-warning__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#attention_icon"></use></svg>
+
+                <table class="promo-warning__table">
+                    <tbody>
+                    <tr>
+                        <td>У вас есть задолженность по услугам в размере:</td>
+                        <td class="promo-warning__table__price"><div class="text--bold text--bright">1 430,00</div></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="documents__nav">
+                <li>
+                    <div class="head-h3 documents__nav__title">Начало периода</div>
+
+                    <select class="selectpicker" title="дд.мм.гг.">
+                        <option value="">Январь 2017</option>
+                        <option value="">Январь 2017</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="head-h3 documents__nav__title">Конец периода</div>
+
+                    <select class="selectpicker" title="дд.мм.гг.">
+                        <option value="">Январь 2017</option>
+                        <option value="">Январь 2017</option>
+                    </select>
+                </li>
+
+                <li>
+                    <button class="btn btn__main btn__main--dark">
+                        <span class="btn__main__text">Показать</span>
+                    </button>
+                </li>
+
+                <li class="documents__nav__right">
+                    <button class="btn btn__main btn__main--dark">
+                        <span class="btn__main__text">Детализация</span>
+
+                        <svg class="btn__main__icon" width="27px" height="18px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons/icons.svg#download"></use></svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="profile-org__table__wrapper">
+
+                <div class="table-fresh">
+                    <div class="table-fresh__head">
+                        <div class="table-fresh__cell">
+                            Тип
+                        </div>
+
+                        <div class="table-fresh__cell">
+                            Услуга
+                        </div>
+
+                        <div class="table-fresh__cell">
+                            Стоимость
+                        </div>
+
+                        <div class="table-fresh__cell">
+                            Валюта
+                        </div>
+                    </div>
+
+                    <div class="table-fresh__body">
+                        <div class="table-fresh__box">
+                            <div class="table-fresh__row">
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Тип</div>
+
+                                    <div class="head-h4 text--light">Входящий</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Услуга</div>
+
+                                    <div class="head-h4 text--light">09.12.2017</div>
+
+                                    <div class="head-h4 text--light">11:46</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Стоимость</div>
+
+                                    <div class="head-h4 text--light">12</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Валюта</div>
+
+                                    <div class="head-h4 text--light">руб.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-fresh__box">
+                            <div class="table-fresh__row">
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Тип</div>
+
+                                    <div class="head-h4 text--light">Входящий</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Услуга</div>
+
+                                    <div class="head-h4 text--light">09.12.2017</div>
+
+                                    <div class="head-h4 text--light">11:46</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Стоимость</div>
+
+                                    <div class="head-h4 text--light">12</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Валюта</div>
+
+                                    <div class="head-h4 text--light">руб.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-fresh__box">
+                            <div class="table-fresh__row">
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Тип</div>
+
+                                    <div class="head-h4 text--light">Входящий</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Услуга</div>
+
+                                    <div class="head-h4 text--light">09.12.2017</div>
+
+                                    <div class="head-h4 text--light">11:46</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Стоимость</div>
+
+                                    <div class="head-h4 text--light">12</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Валюта</div>
+
+                                    <div class="head-h4 text--light">руб.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-fresh__box">
+                            <div class="table-fresh__row">
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Тип</div>
+
+                                    <div class="head-h4 text--light">Входящий</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Услуга</div>
+
+                                    <div class="head-h4 text--light">09.12.2017</div>
+
+                                    <div class="head-h4 text--light">11:46</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Стоимость</div>
+
+                                    <div class="head-h4 text--light">12</div>
+                                </div>
+
+                                <div class="table-fresh__cell">
+                                    <div class="head-h4 text--promo visible-xs">Валюта</div>
+
+                                    <div class="head-h4 text--light">руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="documents__more">
+                <button class="btn btn__main btn__main--dark">
+                    <span class="btn__main__text">Отправить вопрос</span>
+
+                    <svg class="btn__main__icon" width="18px" style="vertical-align: middle;" height="11px"><use xlink:href="./icons/icons.svg#pointer"></use></svg>
+                </button>
+            </div>
+        </div>
 
     </div>
 </div>

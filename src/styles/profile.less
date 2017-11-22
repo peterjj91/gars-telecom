@@ -223,7 +223,7 @@
   }
 
   &__line {
-    padding-bottom: 15px;
+    padding-bottom: 3px;
     border-bottom: 1px dashed #DADADA;
     margin-bottom: 22px;
     @media(@xs){
@@ -258,6 +258,20 @@
     }
   }
 
+  &__error {
+    color: @bright;
+    font-weight: bold;
+    opacity: 0;
+
+    .tooltip {
+      vertical-align: text-top;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
   &__title {
     display: block;
     margin-bottom: 2px;
@@ -265,11 +279,11 @@
 
   &__input {
     .head-h3;
-    height: 45px;
+    height: 36px;
     vertical-align: top;
     width: 100%;
     border: none;
-    padding: 10px 0;
+    padding: 10px 0 0px 0px;
     color: @promo;
     resize: none;
 
@@ -588,7 +602,22 @@
     }
 
     &__head {
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #DADADA;
 
+      .profile-support {
+        &__table {
+          &__cell {
+            .head-h4;
+            color: @unname;
+          }
+        }
+      }
+    }
+
+    &__body {
+      display: table;
+      width: 100%;
     }
 
     &__cell {
@@ -614,11 +643,150 @@
       }
     }
 
+    &__row {
+      display: table;
+      width: 100%;
+    }
+
+    &__box {
+      @media(@xs){
+        width: 50%;
+        float: left;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+      }
+      @media(max-width: 650px){
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+
     &__title {
       margin-top: 5px;
       line-height: normal;
       @media(@xs){
         margin-top: 0px;
+      }
+    }
+
+    &--documents {
+      @media(@xs){
+        padding: 0;
+        background-color: transparent;
+      }
+
+      .profile-support {
+        &__table {
+          padding-bottom: 0;
+
+
+          &__body {
+            @media(@xs){
+              margin: 0px -10px;
+              width: auto;
+            }
+
+            .profile-support__table__cell {
+              padding: 14px 0px;
+              border-top: 1px dashed #DADADA;
+              @media(@xs){
+                padding: 0;
+                border-top: none;
+                margin-bottom: 9px;
+              }
+              @media(max-width: 650px){
+                margin-bottom: 6px;
+              }
+            }
+          }
+
+          &__head {
+            border-bottom: none;
+            @media(@xs){
+              display: none;
+            }
+          }
+
+          &__row {
+            margin-bottom: 10px;
+            @media(@xs){
+              background-color: #fff;
+              padding: 24px 22px;
+            }
+            @media(max-width: 650px){
+              padding: 15px 17px 26px 17px;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          &__cell {
+            vertical-align: middle;
+            @media(@xs){
+              margin: 0;
+            }
+
+            &:nth-child(1){
+              width: 54px;
+              @media(@xs){
+                position: absolute;
+              }
+              @media(max-width: 650px){
+                margin-bottom: 18px;
+              }
+            }
+
+            &:nth-child(2){
+              width: 129px;
+              @media(@xs){
+                width: 100%;
+                padding-left: 49px;
+              }
+            }
+
+            &:nth-child(3){
+              width: 166px;
+              @media(@xs){
+                width: 100%;
+              }
+            }
+
+            &:nth-child(4){
+              width: 225px;
+              @media(@xs){
+                width: 100%;
+              }
+            }
+
+            &:nth-child(5){
+              width: 174px;
+              @media(@xs){
+                width: 100%;
+              }
+            }
+
+            &:nth-child(6){
+              width: 150px;
+              @media(@xs){
+                width: 100%;
+              }
+            }
+
+            &:nth-child(7){
+              text-align: right;
+              @media(@xs){
+                width: 100%;
+                margin-top: 15px;
+              }
+              @media(max-width: 650px){
+                margin-top: 25px;
+                text-align: center;
+              }
+            }
+          }
+        }
       }
     }
   }
