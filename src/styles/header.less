@@ -223,7 +223,7 @@
   }
 
   &__manager {
-    padding: 14px 0px 10px 14px;
+    padding: 15px 0 10px 15px;
     display: inline-block;
     vertical-align: top;
     @media(@sm){
@@ -237,7 +237,8 @@
     &__title {
       color: #979797;
       font-size: 14px;
-      margin-bottom: 8px;
+      margin-bottom: 9px;
+      letter-spacing: 0.2px;
 
       @media(@sm){
         display: none;
@@ -348,7 +349,7 @@
     &__title {
       color: #979797;
       font-size: 14px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       @media(@sm){
         display: none;
       }
@@ -386,6 +387,7 @@
 
       &__name {
         font-weight: 300;
+        margin-top: -1px;
         font-size: 14px;
         color: @main;
 
@@ -396,6 +398,8 @@
         }
 
         .tooltip {
+          vertical-align: middle;
+
           @media(@sm){
             vertical-align: top;
             margin-top: 3px;

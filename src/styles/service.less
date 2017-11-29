@@ -36,12 +36,24 @@
       }
 
       &--light {
-        border-color: #00CC66;
+        border-top: 2px solid #00CC66;
 
         .service {
           &__table {
             &__top {
               background-color: #00CC66;
+            }
+          }
+        }
+      }
+
+      &--cloud {
+        border-top: 2px solid #0CC;
+
+        .service {
+          &__table {
+            &__top {
+              background-color: #00CCCC;
             }
           }
         }
@@ -84,7 +96,7 @@
         &__table {
           &__row {
             padding: 7px 0px;
-            min-height: 62px;
+            //min-height: 62px;
             margin-bottom: 0px;
 
             &:last-child {
@@ -93,8 +105,8 @@
           }
 
           &__cell {
-            padding-top: 18px;
-            padding-bottom: 18px;
+            padding-top: 7px;
+            padding-bottom: 16px;
 
             &:nth-child(1){
               padding-left: 91px;
@@ -109,7 +121,7 @@
 
     &__img {
       position: absolute;
-      top: 15px;
+      top: 8px;
       left: 0px;
 
       img {
@@ -152,6 +164,11 @@
       padding: 7px 0px 7px 0px;
       border-bottom: 1px dashed #DADADA;
       position: relative;
+      overflow: hidden;
+
+      &--active ~ .promo-drop {
+        display: block;
+      }
     }
 
     &__cell {
@@ -200,6 +217,10 @@
       }
     }
 
+    &__open {
+      cursor: pointer;
+    }
+
     &--dialog {
       .service__table__body {
         .service__table__row {
@@ -212,6 +233,15 @@
             padding: 5px 20px 25px 64px;
           }
         }
+
+        .service__table__cell {
+          padding-top: 13px;
+          padding-bottom: 16px;
+        }
+      }
+
+      .service__table__img {
+        top: 15px;
       }
 
       .service__table__cell {

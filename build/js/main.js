@@ -16705,7 +16705,7 @@ $(document).on('click','.promo-use__collapse',function(){
 });
 
 $(document).on('click','.service__table__open',function(){
-    // $(this).parent().toggleClass("service__table__drop--active");
+    $(this).parent('.service__table__cell').parent('.service__table__row').toggleClass("service__table__row--active");
 });
 
 $(function() {
