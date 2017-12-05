@@ -16708,6 +16708,10 @@ $(document).on('click','.service__table__open',function(){
     $(this).parent('.service__table__cell').parent('.service__table__row').toggleClass("service__table__row--active");
 });
 
+$(document).on('click','.promo-drop__close',function(){
+    $(this).parent('.promo-drop__content').parent('.promo-drop__fresh').parent('.service__table__drop').children('.service__table__row--active').removeClass("service__table__row--active");
+});
+
 $(function() {
     var cbpHorizontalMenu = (function() {
         var $listItems = $( '#cbp-hrmenu > ul > li' ),
